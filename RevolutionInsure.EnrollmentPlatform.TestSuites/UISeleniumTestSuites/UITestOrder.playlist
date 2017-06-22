@@ -1,0 +1,4 @@
+<Playlist Version="1.0">
+  <Add Test="RevolutionInsure.EnrollmentPlatform.TestSuites.MultiQuote.FilMultiQuotelSteps.FillStep1ReviewQuotePositive" />
+  <Add Test="RevolutionInsure.EnrollmentPlatform.TestSuites.MultiQuote.FilMultiQuotelSteps.FillStep1ReviewQuoteNegative" />
+</Playlist>

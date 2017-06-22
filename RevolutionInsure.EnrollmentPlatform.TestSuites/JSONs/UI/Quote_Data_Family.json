@@ -1,0 +1,15 @@
+{
+	"Primary" : {
+		"birthDate" : "04/06/1983",
+		"zipcode" : "85249",
+		"isTobaccoUser" : "YES",
+		"gender" : "Male"
+	},
+	"Spouse" : {
+		"birthDate" : "07/09/1987",
+		"zipcode" : "85249",
+		"isTobaccoUser" : "NO",
+		"gender" : "Female"
+	},
+	"Coverage" : "Family"
+}

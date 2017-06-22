@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "properties": {
+    "SourceFile": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "DestinationFilePath": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "DestinationType": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "SourceFile",
+    "DestinationFilePath",
+    "DestinationType"
+  ]
+}

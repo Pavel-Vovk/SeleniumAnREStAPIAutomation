@@ -1,0 +1,16 @@
+{
+	CoverageTypeMes : "You must select a coverage type.",
+	postalCode_mes_sup :"You must supply a postal code.",
+	postalCode_mes_5ch : "Postal code can't be longer than 5 characters.",
+	postalCode_mes_val : "That doesn't look like a valid postal code.",
+	gender_mes : "You must select a Gender option.",
+	isTobaccoUser_mes : "You must select a tobacco option.",
+	birthdate_mes : "You must select a Birth Day.",
+	spousePostalCode_mes_sup : "You must supply a postal code.",
+	spousePostalCode_mes_val : "That doesn't look like a valid postal code.",
+	spousePostalCode_mes_5ch : "Postal code can't be longer than 5 characters.",
+	spouseGender_mes : "You must select Spouse Gender option.",
+	spouseIsTobaccoUser_mes : "You must select a tobacco option.",
+	spouseBirthDay_mes : "You must select a Birth Day.",
+
+}

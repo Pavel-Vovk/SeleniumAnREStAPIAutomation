@@ -1,0 +1,290 @@
+{
+	"id" : 955,
+	"coverage" : 4,
+	"description" : "",
+	"products" : [{
+			"quote" : {
+				"annually" : 1072.05,
+				"monthly" : 89.33,
+				"quarterly" : 268.02,
+				"semiannually" : 536.02
+			},
+			"questions" : [{
+					"id" : 14009,
+					"title" : "HI1",
+					"question" : "Do you have any medical or health insurance currently in force?",
+					"type" : "YesNo",
+					"displyGroup" : 0,
+					"isKnock" : false,
+					"dependentQuestionID" : null,
+					"isReplacementFormRequired" : false,
+					"isDependant" : false,
+					"isShowing" : true,
+					"validationTag" : "IndividualSwitch",
+					"responses" : [{
+							"insuredPerson" : "Richard Nixon",
+							"questionAnswer" : "No",
+							"IsPirmaryInsured" : true
+						}
+					],
+					"productID" : 41,
+					"dependants" : null,
+					"illnessinfo" : null,
+					"showtab" : false
+				}, {
+					"id" : 14010,
+					"title" : "HI2",
+					"question" : "Do you intend to replace any of your medical or health insurance coverage with this policy?",
+					"type" : "YesNo",
+					"displyGroup" : 0,
+					"isKnock" : false,
+					"dependentQuestionID" : null,
+					"isReplacementFormRequired" : false,
+					"isDependant" : false,
+					"isShowing" : false,
+					"validationTag" : "IndividualSwitch",
+					"responses" : [{
+							"insuredPerson" : "Richard Nixon",
+							"questionAnswer" : "No",
+							"IsPirmaryInsured" : true
+						}
+					],
+					"productID" : 41,
+					"dependants" : null,
+					"illnessinfo" : null,
+					"showtab" : false
+				}, {
+					"id" : 14011,
+					"title" : "HIinput",
+					"question" : "If “Yes,” provide type of contract or policy number, and name of company:",
+					"type" : "Input",
+					"displyGroup" : 0,
+					"isKnock" : false,
+					"dependentQuestionID" : 14010,
+					"isReplacementFormRequired" : false,
+					"isDependant" : true,
+					"isShowing" : false,
+					"validationTag" : "MedicoReplacementForm",
+					"responses" : [{
+							"insuredPerson" : null,
+							"questionAnswer" : null,
+							"IsPirmaryInsured" : true
+						}
+					],
+					"productID" : 41,
+					"dependants" : null,
+					"illnessinfo" : null,
+					"tableIsShowing" : false
+				}
+			],
+			"productOptions" : [{
+					"coverageType" : "0",
+					"name" : "Deductible",
+					"values" : [{
+							"value" : "100",
+							"isDefault" : true
+						}, {
+							"value" : "300",
+							"isDefault" : false
+						}, {
+							"value" : "500",
+							"isDefault" : false
+						}
+					],
+					"selectedValue" : 100
+				}, {
+					"coverageType" : "0",
+					"name" : "Benefit Amount",
+					"values" : [{
+							"value" : "5000",
+							"isDefault" : true
+						}, {
+							"value" : "10000",
+							"isDefault" : false
+						}, {
+							"value" : "15000",
+							"isDefault" : false
+						}, {
+							"value" : "20000",
+							"isDefault" : false
+						}, {
+							"value" : "25000",
+							"isDefault" : false
+						}
+					],
+					"selectedValue" : 5000
+				}
+			],
+			"id" : 41,
+			"carrierId" : 14,
+			"carrierName" : "MIC",
+			"carrierFullName" : "Medico Insurance Company",
+			"name" : "AEP",
+			"selected" : true,
+			"applicationStage" : "multiquote",
+			"hasBeneficiary" : false
+		}
+	],
+	"quoteProducts" : [{
+			"productId" : 41,
+			"carrierId" : 14,
+			"productName" : "AEP",
+			"productFullName" : "Accidental Injury (AEP)",
+			"carrierName" : "MIC",
+			"carrierFullName" : "Medico Insurance Company",
+			"options" : [{
+					"coverageType" : "0",
+					"name" : "Deductible",
+					"values" : [{
+							"value" : "100",
+							"isDefault" : true
+						}, {
+							"value" : "300",
+							"isDefault" : false
+						}, {
+							"value" : "500",
+							"isDefault" : false
+						}
+					],
+					"selectedValue" : 100
+				}, {
+					"coverageType" : "0",
+					"name" : "Benefit Amount",
+					"values" : [{
+							"value" : "5000",
+							"isDefault" : true
+						}, {
+							"value" : "10000",
+							"isDefault" : false
+						}, {
+							"value" : "15000",
+							"isDefault" : false
+						}, {
+							"value" : "20000",
+							"isDefault" : false
+						}, {
+							"value" : "25000",
+							"isDefault" : false
+						}
+					],
+					"selectedValue" : 5000
+				}
+			],
+			"premium" : {
+				"yearly" : 1072.05,
+				"semiAnnually" : 536.02,
+				"quarterly" : 268.02,
+				"monthly" : 89.33
+			},
+			"HasBeneficiary" : false,
+			"selected" : true
+		}
+	],
+	"primaryPersonalInfo" : {
+		"birthDate" : "04/05/1983",
+		"zip" : "85249",
+		"state" : "AZ",
+		"city" : "Chandler",
+		"stateID" : 3,
+		"gender" : "Male",
+		"isTobaccoUser" : true,
+		"citizenShip" : {
+			"isCitizen" : true,
+			"hasSSN" : null,
+			"visaType" : null,
+			"dateOfEntry" : null,
+			"birthStateID" : 1
+		},
+		"firstName" : "Richard",
+		"middleName" : "Milhous",
+		"lastName" : "Nixon",
+		"ssn" : "123456789",
+		"email" : "pavel.vovk.work@gmail.com",
+		"homephone" : "0979652592",
+		"smsphone" : "0979652593",
+		"weight" : 241,
+		"displayHeightFeet" : 6,
+		"formatedHeight" : "6' 1\"",
+		"displayHeightInch" : 1,
+		"address1" : "5th Ave"
+	},
+	"payment" : {
+		"firstName" : "Ronald",
+		"lastName" : "Reagan",
+		"email" : "test.payer@gmail.com",
+		"address" : "",
+		"city" : "Tampico",
+		"state" : "IL",
+		"zipcode" : "",
+		"frequency" : "Annually",
+		"signMethod" : "person",
+		"paymentType" : "bank",
+		"readAndAccept" : false,
+		"PaymentSelected" : "",
+		"cardNum" : "",
+		"ccExp" : "",
+		"cvv" : "",
+		"creditCardType" : "",
+		"checkName" : "Check Name",
+		"checkABA" : "222333444",
+		"checkAccount" : "000123456789",
+		"checkType" : "type1",
+		"checkHolderType" : "type2",
+		"checkAccountName" : "Ronald Reagan",
+		"zip" : "61283"
+	},
+	"spousePersonalInfo" : {
+		"zip" : "85249",
+		"state" : "AZ",
+		"city" : "Chandler",
+		"stateID" : 3,
+		"birthDate" : "07/08/1987",
+		"gender" : "Female",
+		"isTobaccoUser" : false,
+		"citizenShip" : {
+			"isCitizen" : true,
+			"hasSSN" : null,
+			"visaType" : null,
+			"dateOfEntry" : null,
+			"birthStateID" : 4
+		},
+		"firstName" : "Thelma",
+		"middleName" : "Catherine",
+		"lastName" : "Nixon",
+		"ssn" : "123456789",
+		"email" : "pavel.vovk.work@gmail.com",
+		"homephone" : "0979652594",
+		"smsphone" : "0979652595",
+		"weight" : 225,
+		"displayHeightFeet" : 5,
+		"displayHeightInch" : 7,
+		"formatedHeight" : "5' 7\""
+	},
+	"beneficiaryPersonalInfo" : [{
+			"showError" : false
+		}
+	],
+	"dependants" : [{
+			"isStudent" : true,
+			"firstName" : "Tricia",
+			"middleName" : "Cox",
+			"lastName" : "Nikson",
+			"ssn" : "1234567892",
+			"dateOfBirth" : "10/10/2005",
+			"gender" : "Male",
+			"relationship" : "Daughter"
+		}, {
+			"isStudent" : false,
+			"firstName" : "Julienos",
+			"middleName" : "Eisenhower",
+			"lastName" : "Nikson",
+			"ssn" : "1234567893",
+			"dateOfBirth" : "11/20/2007",
+			"gender" : "Male",
+			"relationship" : "Son"
+		}
+	],
+	"occupation" : {
+		"address" : {}
+	}
+}

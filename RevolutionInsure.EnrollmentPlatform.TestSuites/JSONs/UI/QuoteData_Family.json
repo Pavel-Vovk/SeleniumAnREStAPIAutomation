@@ -1,0 +1,15 @@
+{
+	"Primary" : {
+		"birthDate" : "04/02/1983",
+		"postalcode" : "12345",
+		"isTobaccoUser" : "Yes",
+		"gender" : "Male"
+	},
+	"Spouse" : {
+		"birthDate" : "02/10/1987",
+		"postalcode" : "23456",
+		"isTobaccoUser" : "No",
+		"gender" : "Female"
+	},
+	"Coverage" : "Family"
+}

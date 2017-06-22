@@ -1,0 +1,1152 @@
+{
+  "definitions": {
+    "AddressType": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "ID": {
+          "type": "integer"
+        },
+        "Description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Addresses": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "ID": {
+                "type": "integer"
+              },
+              "Address1": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Address2": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "City": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "State": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Zip": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "AddressTypeId": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "Agencies": {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "items": {
+                  "type": [
+                    "object",
+                    "null"
+                  ],
+                  "properties": {
+                    "ID": {
+                      "type": "integer"
+                    },
+                    "Name": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "UplineAgencyID": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ]
+                    },
+                    "Email": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "PhoneNumber": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "AllowVoiceSign": {
+                      "type": "boolean"
+                    },
+                    "Contact": {
+                      "type": [
+                        "object",
+                        "null"
+                      ],
+                      "properties": {
+                        "ID": {
+                          "type": "integer"
+                        },
+                        "FirstName": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "MiddleName": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "LastName": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "Email": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "PhoneNumber": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "Agency": {
+                          "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0"
+                        }
+                      },
+                      "required": [
+                        "ID",
+                        "FirstName",
+                        "MiddleName",
+                        "LastName",
+                        "Email",
+                        "PhoneNumber",
+                        "Agency"
+                      ]
+                    },
+                    "Addresses": {
+                      "type": [
+                        "array",
+                        "null"
+                      ],
+                      "items": {
+                        "$ref": "#/definitions/AddressType/properties/Addresses/items/0"
+                      }
+                    },
+                    "Agencies": {
+                      "type": [
+                        "array",
+                        "null"
+                      ],
+                      "items": {
+                        "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0"
+                      }
+                    },
+                    "Agents": {
+                      "type": [
+                        "array",
+                        "null"
+                      ],
+                      "items": {
+                        "type": [
+                          "object",
+                          "null"
+                        ],
+                        "properties": {
+                          "ID": {
+                            "type": "integer"
+                          },
+                          "FirstName": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "MiddleName": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "LastName": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "AgencyId": {
+                            "type": [
+                              "integer",
+                              "null"
+                            ]
+                          },
+                          "UserId": {
+                            "type": [
+                              "integer",
+                              "null"
+                            ]
+                          },
+                          "Email": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "PhoneNumber": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "Addresses": {
+                            "type": [
+                              "array",
+                              "null"
+                            ],
+                            "items": {
+                              "$ref": "#/definitions/AddressType/properties/Addresses/items/0"
+                            }
+                          },
+                          "AgentWritingNumByCarrierStates": {
+                            "type": [
+                              "array",
+                              "null"
+                            ],
+                            "items": {
+                              "type": [
+                                "object",
+                                "null"
+                              ],
+                              "properties": {
+                                "ID": {
+                                  "type": "integer"
+                                },
+                                "AgentId": {
+                                  "type": "integer"
+                                },
+                                "CarrierId": {
+                                  "type": "integer"
+                                },
+                                "StateId": {
+                                  "type": "integer"
+                                },
+                                "AgencyCode": {
+                                  "type": [
+                                    "string",
+                                    "null"
+                                  ]
+                                },
+                                "Agent": {
+                                  "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0"
+                                },
+                                "Carrier": {
+                                  "type": [
+                                    "object",
+                                    "null"
+                                  ],
+                                  "properties": {
+                                    "ID": {
+                                      "type": "integer"
+                                    },
+                                    "Name": {
+                                      "type": [
+                                        "string",
+                                        "null"
+                                      ]
+                                    },
+                                    "ShortName": {
+                                      "type": [
+                                        "string",
+                                        "null"
+                                      ]
+                                    },
+                                    "AgentWritingNumByCarrierStates": {
+                                      "type": [
+                                        "array",
+                                        "null"
+                                      ],
+                                      "items": {
+                                        "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0"
+                                      }
+                                    },
+                                    "Products": {
+                                      "type": [
+                                        "array",
+                                        "null"
+                                      ],
+                                      "items": {
+                                        "type": [
+                                          "object",
+                                          "null"
+                                        ],
+                                        "properties": {
+                                          "ID": {
+                                            "type": "integer"
+                                          },
+                                          "CarrierID": {
+                                            "type": "integer"
+                                          },
+                                          "Name": {
+                                            "type": [
+                                              "string",
+                                              "null"
+                                            ]
+                                          },
+                                          "IsActive": {
+                                            "type": "boolean"
+                                          },
+                                          "FullName": {
+                                            "type": [
+                                              "string",
+                                              "null"
+                                            ]
+                                          },
+                                          "AlternateName": {
+                                            "type": [
+                                              "string",
+                                              "null"
+                                            ]
+                                          },
+                                          "Carrier": {
+                                            "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier"
+                                          },
+                                          "ProductOptions": {
+                                            "type": [
+                                              "array",
+                                              "null"
+                                            ],
+                                            "items": {
+                                              "type": [
+                                                "object",
+                                                "null"
+                                              ],
+                                              "properties": {
+                                                "Id": {
+                                                  "type": "integer"
+                                                },
+                                                "ProductId": {
+                                                  "type": "integer"
+                                                },
+                                                "Name": {
+                                                  "type": [
+                                                    "string",
+                                                    "null"
+                                                  ]
+                                                },
+                                                "CoverageType": {
+                                                  "type": [
+                                                    "string",
+                                                    "null"
+                                                  ]
+                                                },
+                                                "ProductOptionValues": {
+                                                  "type": [
+                                                    "array",
+                                                    "null"
+                                                  ],
+                                                  "items": {
+                                                    "type": [
+                                                      "object",
+                                                      "null"
+                                                    ],
+                                                    "properties": {
+                                                      "ID": {
+                                                        "type": "integer"
+                                                      },
+                                                      "ProductOptionID": {
+                                                        "type": "integer"
+                                                      },
+                                                      "OptionValue": {
+                                                        "type": [
+                                                          "string",
+                                                          "null"
+                                                        ]
+                                                      },
+                                                      "IsDefault": {
+                                                        "type": "boolean"
+                                                      },
+                                                      "ProductOption": {
+                                                        "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0"
+                                                      }
+                                                    },
+                                                    "required": [
+                                                      "ID",
+                                                      "ProductOptionID",
+                                                      "OptionValue",
+                                                      "IsDefault",
+                                                      "ProductOption"
+                                                    ]
+                                                  }
+                                                },
+                                                "States": {
+                                                  "type": [
+                                                    "array",
+                                                    "null"
+                                                  ],
+                                                  "items": {
+                                                    "type": [
+                                                      "object",
+                                                      "null"
+                                                    ],
+                                                    "properties": {
+                                                      "ID": {
+                                                        "type": "integer"
+                                                      },
+                                                      "StateAbbreviation": {
+                                                        "type": [
+                                                          "string",
+                                                          "null"
+                                                        ]
+                                                      },
+                                                      "Name": {
+                                                        "type": [
+                                                          "string",
+                                                          "null"
+                                                        ]
+                                                      },
+                                                      "AgentWritingNumByCarrierStates": {
+                                                        "type": [
+                                                          "array",
+                                                          "null"
+                                                        ],
+                                                        "items": {
+                                                          "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0"
+                                                        }
+                                                      },
+                                                      "ProductOptions": {
+                                                        "type": [
+                                                          "array",
+                                                          "null"
+                                                        ],
+                                                        "items": {
+                                                          "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0"
+                                                        }
+                                                      },
+                                                      "ProductVariants": {
+                                                        "type": [
+                                                          "array",
+                                                          "null"
+                                                        ],
+                                                        "items": {
+                                                          "type": [
+                                                            "object",
+                                                            "null"
+                                                          ],
+                                                          "properties": {
+                                                            "ID": {
+                                                              "type": "integer"
+                                                            },
+                                                            "IsActive": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "AgeStart": {
+                                                              "type": [
+                                                                "integer",
+                                                                "null"
+                                                              ]
+                                                            },
+                                                            "AgeEnd": {
+                                                              "type": [
+                                                                "integer",
+                                                                "null"
+                                                              ]
+                                                            },
+                                                            "AgeEndTobacco": {
+                                                              "type": [
+                                                                "integer",
+                                                                "null"
+                                                              ]
+                                                            },
+                                                            "WeightStart": {
+                                                              "type": "integer"
+                                                            },
+                                                            "WeightEnd": {
+                                                              "type": "integer"
+                                                            },
+                                                            "CoveragePeriodEndAge": {
+                                                              "type": "integer"
+                                                            },
+                                                            "DependentMinAge": {
+                                                              "type": "integer"
+                                                            },
+                                                            "DependentAgeMinStudentTime": {
+                                                              "type": "integer"
+                                                            },
+                                                            "ProductID": {
+                                                              "type": "integer"
+                                                            },
+                                                            "StateID": {
+                                                              "type": "integer"
+                                                            },
+                                                            "ApplicationProducts": {
+                                                              "type": [
+                                                                "array",
+                                                                "null"
+                                                              ],
+                                                              "items": {
+                                                                "type": [
+                                                                  "object",
+                                                                  "null"
+                                                                ],
+                                                                "properties": {
+                                                                  "ID": {
+                                                                    "type": "integer"
+                                                                  },
+                                                                  "ApplicationID": {
+                                                                    "type": "integer"
+                                                                  },
+                                                                  "ProductID": {
+                                                                    "type": "integer"
+                                                                  },
+                                                                  "StateName": {
+                                                                    "type": [
+                                                                      "string",
+                                                                      "null"
+                                                                    ]
+                                                                  },
+                                                                  "ApplicationStageID": {
+                                                                    "type": "integer"
+                                                                  },
+                                                                  "PaymentMethodID": {
+                                                                    "type": [
+                                                                      "integer",
+                                                                      "null"
+                                                                    ]
+                                                                  },
+                                                                  "PaymentFrequencyID": {
+                                                                    "type": [
+                                                                      "integer",
+                                                                      "null"
+                                                                    ]
+                                                                  },
+                                                                  "VarientID": {
+                                                                    "type": [
+                                                                      "integer",
+                                                                      "null"
+                                                                    ]
+                                                                  },
+                                                                  "Application": {
+                                                                    "type": [
+                                                                      "object",
+                                                                      "null"
+                                                                    ],
+                                                                    "properties": {
+                                                                      "ID": {
+                                                                        "type": "integer"
+                                                                      },
+                                                                      "AgentID": {
+                                                                        "type": "integer"
+                                                                      },
+                                                                      "DateOfApplication": {
+                                                                        "type": "string"
+                                                                      },
+                                                                      "CreatedDate": {
+                                                                        "type": "string"
+                                                                      },
+                                                                      "LastModifiedDate": {
+                                                                        "type": "string"
+                                                                      },
+                                                                      "ApplicationProducts": {
+                                                                        "type": [
+                                                                          "array",
+                                                                          "null"
+                                                                        ],
+                                                                        "items": {
+                                                                          "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0/properties/ProductVariants/items/0/properties/ApplicationProducts/items/0"
+                                                                        }
+                                                                      }
+                                                                    },
+                                                                    "required": [
+                                                                      "ID",
+                                                                      "AgentID",
+                                                                      "DateOfApplication",
+                                                                      "CreatedDate",
+                                                                      "LastModifiedDate",
+                                                                      "ApplicationProducts"
+                                                                    ]
+                                                                  },
+                                                                  "ApplicationStage": {
+                                                                    "type": [
+                                                                      "object",
+                                                                      "null"
+                                                                    ],
+                                                                    "properties": {
+                                                                      "ID": {
+                                                                        "type": "integer"
+                                                                      },
+                                                                      "Name": {
+                                                                        "type": [
+                                                                          "string",
+                                                                          "null"
+                                                                        ]
+                                                                      },
+                                                                      "ApplicationProducts": {
+                                                                        "type": [
+                                                                          "array",
+                                                                          "null"
+                                                                        ],
+                                                                        "items": {
+                                                                          "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0/properties/ProductVariants/items/0/properties/ApplicationProducts/items/0"
+                                                                        }
+                                                                      }
+                                                                    },
+                                                                    "required": [
+                                                                      "ID",
+                                                                      "Name",
+                                                                      "ApplicationProducts"
+                                                                    ]
+                                                                  },
+                                                                  "PaymentFrequency": {
+                                                                    "type": [
+                                                                      "object",
+                                                                      "null"
+                                                                    ],
+                                                                    "properties": {
+                                                                      "ID": {
+                                                                        "type": "integer"
+                                                                      },
+                                                                      "Name": {
+                                                                        "type": [
+                                                                          "string",
+                                                                          "null"
+                                                                        ]
+                                                                      },
+                                                                      "ApplicationProducts": {
+                                                                        "type": [
+                                                                          "array",
+                                                                          "null"
+                                                                        ],
+                                                                        "items": {
+                                                                          "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0/properties/ProductVariants/items/0/properties/ApplicationProducts/items/0"
+                                                                        }
+                                                                      }
+                                                                    },
+                                                                    "required": [
+                                                                      "ID",
+                                                                      "Name",
+                                                                      "ApplicationProducts"
+                                                                    ]
+                                                                  },
+                                                                  "PaymentMethod": {
+                                                                    "type": [
+                                                                      "object",
+                                                                      "null"
+                                                                    ],
+                                                                    "properties": {
+                                                                      "ID": {
+                                                                        "type": "integer"
+                                                                      },
+                                                                      "Name": {
+                                                                        "type": [
+                                                                          "string",
+                                                                          "null"
+                                                                        ]
+                                                                      },
+                                                                      "ApplicationProducts": {
+                                                                        "type": [
+                                                                          "array",
+                                                                          "null"
+                                                                        ],
+                                                                        "items": {
+                                                                          "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0/properties/ProductVariants/items/0/properties/ApplicationProducts/items/0"
+                                                                        }
+                                                                      }
+                                                                    },
+                                                                    "required": [
+                                                                      "ID",
+                                                                      "Name",
+                                                                      "ApplicationProducts"
+                                                                    ]
+                                                                  },
+                                                                  "ProductVariant": {
+                                                                    "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0/properties/ProductVariants/items/0"
+                                                                  }
+                                                                },
+                                                                "required": [
+                                                                  "ID",
+                                                                  "ApplicationID",
+                                                                  "ProductID",
+                                                                  "StateName",
+                                                                  "ApplicationStageID",
+                                                                  "PaymentMethodID",
+                                                                  "PaymentFrequencyID",
+                                                                  "VarientID",
+                                                                  "Application",
+                                                                  "ApplicationStage",
+                                                                  "PaymentFrequency",
+                                                                  "PaymentMethod",
+                                                                  "ProductVariant"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "Product": {
+                                                              "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0"
+                                                            },
+                                                            "State": {
+                                                              "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0"
+                                                            }
+                                                          },
+                                                          "required": [
+                                                            "ID",
+                                                            "IsActive",
+                                                            "AgeStart",
+                                                            "AgeEnd",
+                                                            "AgeEndTobacco",
+                                                            "WeightStart",
+                                                            "WeightEnd",
+                                                            "CoveragePeriodEndAge",
+                                                            "DependentMinAge",
+                                                            "DependentAgeMinStudentTime",
+                                                            "ProductID",
+                                                            "StateID",
+                                                            "ApplicationProducts",
+                                                            "Product",
+                                                            "State"
+                                                          ]
+                                                        }
+                                                      },
+                                                      "QuestionBanks": {
+                                                        "type": [
+                                                          "array",
+                                                          "null"
+                                                        ],
+                                                        "items": {
+                                                          "type": [
+                                                            "object",
+                                                            "null"
+                                                          ],
+                                                          "properties": {
+                                                            "ID": {
+                                                              "type": "integer"
+                                                            },
+                                                            "QuestionText": {
+                                                              "type": [
+                                                                "string",
+                                                                "null"
+                                                              ]
+                                                            },
+                                                            "DisplayControlGroup": {
+                                                              "type": [
+                                                                "string",
+                                                                "null"
+                                                              ]
+                                                            },
+                                                            "DisplayLevel": {
+                                                              "type": [
+                                                                "integer",
+                                                                "null"
+                                                              ]
+                                                            },
+                                                            "DisplayGroup": {
+                                                              "type": [
+                                                                "integer",
+                                                                "null"
+                                                              ]
+                                                            },
+                                                            "DisplayStep": {
+                                                              "type": [
+                                                                "integer",
+                                                                "null"
+                                                              ]
+                                                            },
+                                                            "DisplayOrder": {
+                                                              "type": [
+                                                                "integer",
+                                                                "null"
+                                                              ]
+                                                            },
+                                                            "DisplayId": {
+                                                              "type": [
+                                                                "string",
+                                                                "null"
+                                                              ]
+                                                            },
+                                                            "DisplayTag": {
+                                                              "type": [
+                                                                "string",
+                                                                "null"
+                                                              ]
+                                                            },
+                                                            "ValidationTag": {
+                                                              "type": [
+                                                                "string",
+                                                                "null"
+                                                              ]
+                                                            },
+                                                            "DependentTag": {
+                                                              "type": [
+                                                                "string",
+                                                                "null"
+                                                              ]
+                                                            },
+                                                            "IsKnock": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "ProductID": {
+                                                              "type": "integer"
+                                                            },
+                                                            "StateID": {
+                                                              "type": "integer"
+                                                            },
+                                                            "IsVariant": {
+                                                              "type": "boolean"
+                                                            },
+                                                            "ProductVariantID": {
+                                                              "type": [
+                                                                "integer",
+                                                                "null"
+                                                              ]
+                                                            },
+                                                            "Product": {
+                                                              "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0"
+                                                            },
+                                                            "State": {
+                                                              "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0"
+                                                            }
+                                                          },
+                                                          "required": [
+                                                            "ID",
+                                                            "QuestionText",
+                                                            "DisplayControlGroup",
+                                                            "DisplayLevel",
+                                                            "DisplayGroup",
+                                                            "DisplayStep",
+                                                            "DisplayOrder",
+                                                            "DisplayId",
+                                                            "DisplayTag",
+                                                            "ValidationTag",
+                                                            "DependentTag",
+                                                            "IsKnock",
+                                                            "ProductID",
+                                                            "StateID",
+                                                            "IsVariant",
+                                                            "ProductVariantID",
+                                                            "Product",
+                                                            "State"
+                                                          ]
+                                                        }
+                                                      }
+                                                    },
+                                                    "required": [
+                                                      "ID",
+                                                      "StateAbbreviation",
+                                                      "Name",
+                                                      "AgentWritingNumByCarrierStates",
+                                                      "ProductOptions",
+                                                      "ProductVariants",
+                                                      "QuestionBanks"
+                                                    ]
+                                                  }
+                                                },
+                                                "Product": {
+                                                  "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0"
+                                                }
+                                              },
+                                              "required": [
+                                                "Id",
+                                                "ProductId",
+                                                "Name",
+                                                "CoverageType",
+                                                "ProductOptionValues",
+                                                "States",
+                                                "Product"
+                                              ]
+                                            }
+                                          },
+                                          "ProductVariants": {
+                                            "type": [
+                                              "array",
+                                              "null"
+                                            ],
+                                            "items": {
+                                              "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0/properties/ProductVariants/items/0"
+                                            }
+                                          },
+                                          "QuestionBanks": {
+                                            "type": [
+                                              "array",
+                                              "null"
+                                            ],
+                                            "items": {
+                                              "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0/properties/QuestionBanks/items/0"
+                                            }
+                                          }
+                                        },
+                                        "required": [
+                                          "ID",
+                                          "CarrierID",
+                                          "Name",
+                                          "IsActive",
+                                          "FullName",
+                                          "AlternateName",
+                                          "Carrier",
+                                          "ProductOptions",
+                                          "ProductVariants",
+                                          "QuestionBanks"
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  "required": [
+                                    "ID",
+                                    "Name",
+                                    "ShortName",
+                                    "AgentWritingNumByCarrierStates",
+                                    "Products"
+                                  ]
+                                },
+                                "State": {
+                                  "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0"
+                                }
+                              },
+                              "required": [
+                                "ID",
+                                "AgentId",
+                                "CarrierId",
+                                "StateId",
+                                "AgencyCode",
+                                "Agent",
+                                "Carrier",
+                                "State"
+                              ]
+                            }
+                          },
+                          "Agency": {
+                            "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0"
+                          }
+                        },
+                        "required": [
+                          "ID",
+                          "FirstName",
+                          "MiddleName",
+                          "LastName",
+                          "AgencyId",
+                          "UserId",
+                          "Email",
+                          "PhoneNumber",
+                          "Addresses",
+                          "AgentWritingNumByCarrierStates",
+                          "Agency"
+                        ]
+                      }
+                    },
+                    "UplineAgency": {
+                      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0"
+                    }
+                  },
+                  "required": [
+                    "ID",
+                    "Name",
+                    "UplineAgencyID",
+                    "Email",
+                    "PhoneNumber",
+                    "AllowVoiceSign",
+                    "Contact",
+                    "Addresses",
+                    "Agencies",
+                    "Agents",
+                    "UplineAgency"
+                  ]
+                }
+              },
+              "Agents": {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "items": {
+                  "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0"
+                }
+              },
+              "AddressType": {
+                "$ref": "#/definitions/AddressType"
+              }
+            },
+            "required": [
+              "ID",
+              "Address1",
+              "Address2",
+              "City",
+              "State",
+              "Zip",
+              "AddressTypeId",
+              "Agencies",
+              "Agents",
+              "AddressType"
+            ]
+          }
+        }
+      },
+      "required": [
+        "ID",
+        "Description",
+        "Addresses"
+      ]
+    },
+    "QuestionBank": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0/properties/QuestionBanks/items/0"
+    },
+    "PaymentMethod": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0/properties/ProductVariants/items/0/properties/ApplicationProducts/items/0/properties/PaymentMethod"
+    },
+    "PaymentFrequency": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0/properties/ProductVariants/items/0/properties/ApplicationProducts/items/0/properties/PaymentFrequency"
+    },
+    "ApplicationStage": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0/properties/ProductVariants/items/0/properties/ApplicationProducts/items/0/properties/ApplicationStage"
+    },
+    "Application": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0/properties/ProductVariants/items/0/properties/ApplicationProducts/items/0/properties/Application"
+    },
+    "ApplicationProduct": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0/properties/ProductVariants/items/0/properties/ApplicationProducts/items/0"
+    },
+    "ProductVariant": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0/properties/ProductVariants/items/0"
+    },
+    "State": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/States/items/0"
+    },
+    "ProductOptionValue": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0/properties/ProductOptionValues/items/0"
+    },
+    "ProductOption": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0/properties/ProductOptions/items/0"
+    },
+    "Product": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier/properties/Products/items/0"
+    },
+    "Carrier": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0/properties/Carrier"
+    },
+    "AgentWritingNumByCarrierState": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0/properties/AgentWritingNumByCarrierStates/items/0"
+    },
+    "Agent": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0"
+    },
+    "Address": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0"
+    },
+    "Agency": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0"
+    },
+    "Contact": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Contact"
+    }
+  },
+  "type": "object",
+  "properties": {
+    "ID": {
+      "type": "integer"
+    },
+    "Name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "UplineAgencyID": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "Email": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "PhoneNumber": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "AllowVoiceSign": {
+      "type": "boolean"
+    },
+    "Contact": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Contact"
+    },
+    "Addresses": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$ref": "#/definitions/AddressType/properties/Addresses/items/0"
+      }
+    },
+    "Agencies": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0"
+      }
+    },
+    "Agents": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0/properties/Agents/items/0"
+      }
+    },
+    "UplineAgency": {
+      "$ref": "#/definitions/AddressType/properties/Addresses/items/0/properties/Agencies/items/0"
+    }
+  },
+  "required": [
+    "ID",
+    "Name",
+    "UplineAgencyID",
+    "Email",
+    "PhoneNumber",
+    "AllowVoiceSign",
+    "Contact",
+    "Addresses",
+    "Agencies",
+    "Agents",
+    "UplineAgency"
+  ]
+}

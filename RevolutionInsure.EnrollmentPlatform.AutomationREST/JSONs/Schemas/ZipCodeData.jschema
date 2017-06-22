@@ -1,0 +1,89 @@
+{
+  "type": "object",
+  "properties": {
+    "ID": {
+      "type": "integer"
+    },
+    "ZipCode": {
+      "type": "integer"
+    },
+    "ZipCodeType": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "DecommissionedZipCode": {
+      "type": "boolean"
+    },
+    "PrimaryCity": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "StateAbbreviation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "County": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "TimeZone": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "AreaCodes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "Country": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "Latitude": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "Longitude": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "StateID": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "ID",
+    "ZipCode",
+    "ZipCodeType",
+    "DecommissionedZipCode",
+    "PrimaryCity",
+    "StateAbbreviation",
+    "County",
+    "TimeZone",
+    "AreaCodes",
+    "Country",
+    "Latitude",
+    "Longitude",
+    "StateID"
+  ]
+}

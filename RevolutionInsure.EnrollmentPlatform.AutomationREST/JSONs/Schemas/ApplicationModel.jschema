@@ -1,0 +1,245 @@
+{
+  "definitions": {
+    "KnockOutQuestionModel": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "Title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Question": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Value": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "Title",
+        "Question",
+        "Type",
+        "Value"
+      ]
+    },
+    "PersonalInformationModel": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "FirstName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "LastName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "MiddleName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "IsTobaccoUser": {
+          "type": "boolean"
+        },
+        "DateOfBirth": {
+          "type": "string"
+        },
+        "Gender": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Address1": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Address2": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "State": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "City": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Zip": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Email": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Homephone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "FirstName",
+        "LastName",
+        "MiddleName",
+        "IsTobaccoUser",
+        "DateOfBirth",
+        "Gender",
+        "Address1",
+        "Address2",
+        "State",
+        "City",
+        "Zip",
+        "Email",
+        "Homephone"
+      ]
+    },
+    "ProductQuoteModel": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "Monthly": {
+          "type": "number"
+        },
+        "Quarterly": {
+          "type": "number"
+        },
+        "Semiannually": {
+          "type": "number"
+        },
+        "Annually": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "Monthly",
+        "Quarterly",
+        "Semiannually",
+        "Annually"
+      ]
+    },
+    "ProductModel": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "Name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Quote": {
+          "$ref": "#/definitions/ProductQuoteModel"
+        }
+      },
+      "required": [
+        "Name",
+        "Quote"
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "ID": {
+      "type": "integer"
+    },
+    "Application": {
+      "type": "string"
+    },
+    "Coveragetypes": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "Coverage": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "Products": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$ref": "#/definitions/ProductModel"
+      }
+    },
+    "PrimaryPersonalInfo": {
+      "$ref": "#/definitions/PersonalInformationModel"
+    },
+    "SpousePersonalInfo": {
+      "$ref": "#/definitions/PersonalInformationModel"
+    },
+    "Questions": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$ref": "#/definitions/KnockOutQuestionModel"
+      }
+    }
+  },
+  "required": [
+    "ID",
+    "Application",
+    "Coveragetypes",
+    "Coverage",
+    "Products",
+    "PrimaryPersonalInfo",
+    "SpousePersonalInfo",
+    "Questions"
+  ]
+}

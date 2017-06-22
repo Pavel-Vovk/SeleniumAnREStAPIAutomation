@@ -1,0 +1,586 @@
+{
+	"ID" : 214,
+	"Coverage" : 1,
+	"Products" : [{
+			"Id" : 34,
+			"Name" : "AEP",
+			"CarrierID" : 1,
+			"ApplicationStage" : "multiquote",
+			"ProductOptions" : [{
+					"Id" : 0,
+					"ProductId" : 0,
+					"Name" : "Benefit Amount",
+					"CoverageType" : 0,
+					"ProductOptionValues" : []
+				}, {
+					"Id" : 0,
+					"ProductId" : 0,
+					"Name" : "Deductible",
+					"CoverageType" : 0,
+					"ProductOptionValues" : []
+				}, {
+					"Id" : 0,
+					"ProductId" : 0,
+					"Name" : "Critical Illness Amount (optional)",
+					"CoverageType" : 0,
+					"ProductOptionValues" : []
+				}, {
+					"Id" : 0,
+					"ProductId" : 0,
+					"Name" : "Critical Illness Amount Spouse (optional)",
+					"CoverageType" : 2,
+					"ProductOptionValues" : []
+				}, {
+					"Id" : 0,
+					"ProductId" : 0,
+					"Name" : "Critical Illness Amount Child (optional)",
+					"CoverageType" : 3,
+					"ProductOptionValues" : []
+				}
+			],
+			"Quote" : {
+				"Monthly" : 27.5253,
+				"Quarterly" : 76.7811,
+				"Semiannually" : 150.6648,
+				"Annually" : 289.74
+			},
+			"ProductVariant" : null,
+			"Questions" : [{
+					"ID" : 8974,
+					"Title" : "Q1 ExistingInsurance Default2",
+					"Question" : "Does any Proposed Insured have any existing or pending supplemental accident insurance? (If yes, please provide a few additional details.)",
+					"Type" : "YesNo",
+					"displyGroup" : 0,
+					"IsKnock" : false,
+					"DependentQuestionID" : null,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : false,
+					"IsShowing" : true,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8975,
+					"Title" : "ExistingInsuranceLine RequireLine",
+					"Question" : "",
+					"Type" : "ExistingInsuranceAEP5Field",
+					"displyGroup" : 0,
+					"IsKnock" : false,
+					"DependentQuestionID" : 8974,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : true,
+					"IsShowing" : false,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8976,
+					"Title" : "Q1",
+					"Question" : "Agreement - Authorization - Acknowledgement - Understanding",
+					"Type" : "Agreement",
+					"displyGroup" : 0,
+					"IsKnock" : false,
+					"DependentQuestionID" : null,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : false,
+					"IsShowing" : true,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8977,
+					"Title" : "Q2",
+					"Question" : "Notices To The Primary Proposed Insured",
+					"Type" : "Agreement",
+					"displyGroup" : 0,
+					"IsKnock" : false,
+					"DependentQuestionID" : null,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : false,
+					"IsShowing" : true,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8978,
+					"Title" : "Q3",
+					"Question" : "Notice of Health Information Privacy Practices",
+					"Type" : "Agreement",
+					"displyGroup" : 0,
+					"IsKnock" : false,
+					"DependentQuestionID" : null,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : false,
+					"IsShowing" : true,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8979,
+					"Title" : "Q4",
+					"Question" : "Health Insurance Portability And Accountability Act (“HIPAA”)",
+					"Type" : "Agreement",
+					"displyGroup" : 0,
+					"IsKnock" : false,
+					"DependentQuestionID" : null,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : false,
+					"IsShowing" : true,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8980,
+					"Title" : "Q5",
+					"Question" : "Accident Coverage Outline Of Coverage",
+					"Type" : "Agreement",
+					"displyGroup" : 0,
+					"IsKnock" : false,
+					"DependentQuestionID" : null,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : false,
+					"IsShowing" : true,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8981,
+					"Title" : "Q6 DependentAgreementReplacement",
+					"Question" : "Notice to Applicant Regarding Replacement",
+					"Type" : "Agreement",
+					"displyGroup" : 0,
+					"IsKnock" : false,
+					"DependentQuestionID" : null,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : false,
+					"IsShowing" : true,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8982,
+					"Title" : "Q2 Default2 TOBACCO",
+					"Question" : "1. Additional Information – In the past 1 year, had any Proposed Insured used tobacco (cigarette, cigars, pipe, snuff, chewing tobacco) or nicotine patches, nicotine gum or any other form of nicotine?",
+					"Type" : "YesNo",
+					"displyGroup" : 0,
+					"IsKnock" : false,
+					"DependentQuestionID" : null,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : false,
+					"IsShowing" : true,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8983,
+					"Title" : "Q3 Indent Default2 TOBACCOPRIMARY",
+					"Question" : "For a “Yes” answer, please indicate for Primary Proposed Insured",
+					"Type" : "YesNo",
+					"displyGroup" : 0,
+					"IsKnock" : false,
+					"DependentQuestionID" : 8982,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : true,
+					"IsShowing" : false,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8984,
+					"Title" : "Q4 Indent Default2 TOBACCOSPOUSE",
+					"Question" : "For a “Yes” answer, please indicate for Spouse.",
+					"Type" : "YesNo",
+					"displyGroup" : 0,
+					"IsKnock" : false,
+					"DependentQuestionID" : 8982,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : true,
+					"IsShowing" : false,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8985,
+					"Title" : "Q5 Default2",
+					"Question" : "2. Has any Proposed Insured ever been diagnosed as having or been treated by any member of the medical profession for Acquired Immune Deficiency Syndrome (AIDS), for AIDS Related Complex (ARC), or for any disorder of the immune system, or tested positive for the Human Immunodeficiency Virus (HIV)?",
+					"Type" : "YesNo",
+					"displyGroup" : 0,
+					"IsKnock" : true,
+					"DependentQuestionID" : null,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : false,
+					"IsShowing" : true,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8986,
+					"Title" : "Q6 Default2",
+					"Question" : "3. In the last 5 years, has any Proposed Insured been diagnosed or received medical advice for cancer, leukemia, melanoma, malignant tumor, Hodgkin’s disease or non-Hodgkin’s lymphoma?",
+					"Type" : "YesNo",
+					"displyGroup" : 0,
+					"IsKnock" : true,
+					"DependentQuestionID" : null,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : false,
+					"IsShowing" : true,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8987,
+					"Title" : "Q7",
+					"Question" : "4. In the last 5 years, has any Proposed Insured been diagnosed as having or been treated for or consulted a licensed health care provider for:",
+					"Type" : null,
+					"displyGroup" : 0,
+					"IsKnock" : false,
+					"DependentQuestionID" : null,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : false,
+					"IsShowing" : true,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8988,
+					"Title" : "Q7G1 Indent Default2",
+					"Question" : "a. Stroke or transient ischemic attack (TIA)?",
+					"Type" : "YesNo",
+					"displyGroup" : 0,
+					"IsKnock" : true,
+					"DependentQuestionID" : null,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : false,
+					"IsShowing" : true,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8989,
+					"Title" : "Q7G2 Indent Default2",
+					"Question" : "b. Diabetes?",
+					"Type" : "YesNo",
+					"displyGroup" : 0,
+					"IsKnock" : true,
+					"DependentQuestionID" : null,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : false,
+					"IsShowing" : true,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8990,
+					"Title" : "Q7G3 Indent Default2",
+					"Question" : "c. Disease or disorder of the heart or blood vessels, heart attack or uncontrolled high blood pressure?",
+					"Type" : "YesNo",
+					"displyGroup" : 0,
+					"IsKnock" : true,
+					"DependentQuestionID" : null,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : false,
+					"IsShowing" : true,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8991,
+					"Title" : "Q7G4 Indent Default2",
+					"Question" : "d. Kidney failure or abnormal kidney function?",
+					"Type" : "YesNo",
+					"displyGroup" : 0,
+					"IsKnock" : true,
+					"DependentQuestionID" : null,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : false,
+					"IsShowing" : true,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8992,
+					"Title" : "Q7G5 Indent Default2",
+					"Question" : "e. An organ transplant or been advised of the need of an organ transplant?",
+					"Type" : "YesNo",
+					"displyGroup" : 0,
+					"IsKnock" : true,
+					"DependentQuestionID" : null,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : false,
+					"IsShowing" : true,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}, {
+					"ID" : 8993,
+					"Title" : "Q8 RequireLine TOBACCODETAIL",
+					"Question" : "Details For Any “Yes” Answers To Above Questions",
+					"Type" : "InsuredInQuestionAEP",
+					"displyGroup" : 0,
+					"IsKnock" : false,
+					"DependentQuestionID" : null,
+					"IsReplacementFormRequired" : false,
+					"IsDependant" : false,
+					"IsShowing" : true,
+					"ValidationTag" : null,
+					"Responses" : [{
+							"InsuredPerson" : "Michael Woodruff",
+							"QuestionAnswer" : null,
+							"TypeOfContract" : null,
+							"policyNumber" : null,
+							"companyName" : null,
+							"ReplacementPerson" : null
+						}
+					],
+					"ProductID" : 34,
+					"Dependants" : null,
+					"illnessinfo" : null
+				}
+			],
+			"hasBeneficiary" : false
+		}
+	],
+	"PrimaryPersonalInfo" : {
+		"FirstName" : "Michael",
+		"LastName" : "Woodruff",
+		"MiddleName" : "D",
+		"IsTobaccoUser" : true,
+		"birthDate" : "1977-02-13T22:00:00Z",
+		"Gender" : "Male",
+		"Address1" : "address1",
+		"Address2" : "address 2",
+		"State" : "AZ",
+		"StateID" : 3,
+		"City" : "Chandler",
+		"Zip" : "85249",
+		"Email" : "none@yahoo.com",
+		"Homephone" : "1234567890",
+		"Smsphone" : "1234567890",
+		"HeightInInches" : 73,
+		"DisplayHeightFeet" : 5,
+		"DisplayHeightInch" : 5,
+		"FormatedHeight" : null,
+		"Weight" : 175,
+		"Ssn" : "333558888",
+		"CitizenShip" : {
+			"isCitizen" : true,
+			"dateOfEntry" : null,
+			"visaType" : null,
+			"birthStateID" : 2,
+			"birthCountry" : null,
+			"hasSSN" : null
+		}
+	},
+	"SpousePersonalInfo" : null,
+	"BeneficiaryPersonalInfo" : [{
+			"FirstName" : null,
+			"LastName" : null,
+			"MiddleName" : null,
+			"DateOfBirth" : "0001-01-01T00:00:00",
+			"Gender" : null,
+			"Relationship" : null,
+			"Address1" : null,
+			"Address2" : null,
+			"State" : null,
+			"City" : null,
+			"Zip" : 0,
+			"Email" : null,
+			"Homephone" : 0,
+			"Smsphone" : 0,
+			"share" : 0,
+			"showError" : false
+		}
+	],
+	"Occupation" : null,
+	"Dependants" : []
+}

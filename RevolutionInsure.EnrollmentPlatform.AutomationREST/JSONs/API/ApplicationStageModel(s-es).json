@@ -1,0 +1,1 @@
+[{"ID":1,"Name":"multiquote","StageOrder":1},{"ID":2,"Name":"personalinformation","StageOrder":2},{"ID":3,"Name":"paymentinformation","StageOrder":3},{"ID":4,"Name":"signed","StageOrder":4},{"ID":5,"Name":"completed","StageOrder":5}]

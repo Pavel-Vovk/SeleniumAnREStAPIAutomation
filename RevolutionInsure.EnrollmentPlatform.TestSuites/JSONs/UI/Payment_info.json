@@ -1,0 +1,27 @@
+{
+	payment : {
+	firstName : "Ronald",
+	lastName : "Reagan",
+	email : "test.payer@gmail.com",
+	address : "9th Ave",
+	city : "Tampico",
+	state : "Illinois",
+	zipcode : "61283",
+	frequency : "Yearly",
+	SignMethod : "// Could use: email, sms, person, voice",
+	signMethod : "person",
+	paymentType : "bank"
+	readAndAccept : "false",
+	PaymentSelected : "!N/A!String!"
+	cardNum : "!N/A!String!",
+	ccExp : "!N/A!String",
+	cvv : "123",
+	creditCardType : "!N/A!String"
+	checkName : "Check Name",
+	checkABA : "222333444",
+	checkAccount : "000123456789",
+	checkType : "Type1",
+	checkHolderType: "Type2",
+	checkAccountName : "Ronald Reagan",
+	},
+}

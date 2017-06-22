@@ -1,0 +1,19 @@
+{
+	"ID" : 
+	"FirstName" : "Automation",
+	"MiddleName" : "Created",
+	"LastName" : "Agent",
+	"AgencyID" : 58,
+	"AgencyName" : "PV Agency",
+	"UserId" : null,
+	"Email" : "pavel.vovk.work@gmail.com",
+	"WorkPhone" : "555-955-5555",
+	"CellPhone" : null,
+	"AgentStatusId" : 2,
+	"AgentRegisterLink" : "EAAAAKGurov0kYDOiS71q_KE_p62E_-SAdYQXUMwHBJ3SvXe0",
+	"AgentWritingNumByCarrierStateModels" : [],
+	"Addresses" : [],
+	"Agency" : null,
+	"AgentStatus" : null,
+
+}

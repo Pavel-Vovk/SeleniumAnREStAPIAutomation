@@ -1,0 +1,255 @@
+{
+  "definitions": {
+    "Agent": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "ID": {
+          "type": "integer"
+        },
+        "FirstName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "MiddleName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "LastName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "AgencyId": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "UserId": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "Addresses": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "ID": {
+                "type": "integer"
+              },
+              "Address1": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Address2": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "City": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "State": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Zip": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "Agencies": {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "items": {
+                  "type": [
+                    "object",
+                    "null"
+                  ],
+                  "properties": {
+                    "ID": {
+                      "type": "integer"
+                    },
+                    "Name": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "UplineAgencyID": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ]
+                    },
+                    "Addresses": {
+                      "type": [
+                        "array",
+                        "null"
+                      ],
+                      "items": {
+                        "$ref": "#/definitions/Agent/properties/Addresses/items/0"
+                      }
+                    },
+                    "Agencies": {
+                      "type": [
+                        "array",
+                        "null"
+                      ],
+                      "items": {
+                        "$ref": "#/definitions/Agent/properties/Addresses/items/0/properties/Agencies/items/0"
+                      }
+                    },
+                    "Agents": {
+                      "type": [
+                        "array",
+                        "null"
+                      ],
+                      "items": {
+                        "$ref": "#/definitions/Agent"
+                      }
+                    },
+                    "UplineAgency": {
+                      "$ref": "#/definitions/Agent/properties/Addresses/items/0/properties/Agencies/items/0"
+                    }
+                  },
+                  "required": [
+                    "ID",
+                    "Name",
+                    "UplineAgencyID",
+                    "Addresses",
+                    "Agencies",
+                    "Agents",
+                    "UplineAgency"
+                  ]
+                }
+              },
+              "Agents": {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "items": {
+                  "$ref": "#/definitions/Agent"
+                }
+              }
+            },
+            "required": [
+              "ID",
+              "Address1",
+              "Address2",
+              "City",
+              "State",
+              "Zip",
+              "Agencies",
+              "Agents"
+            ]
+          }
+        },
+        "Agency": {
+          "$ref": "#/definitions/Agent/properties/Addresses/items/0/properties/Agencies/items/0"
+        }
+      },
+      "required": [
+        "ID",
+        "FirstName",
+        "MiddleName",
+        "LastName",
+        "AgencyId",
+        "UserId",
+        "Addresses",
+        "Agency"
+      ]
+    },
+    "Agency": {
+      "$ref": "#/definitions/Agent/properties/Addresses/items/0/properties/Agencies/items/0"
+    },
+    "Address": {
+      "$ref": "#/definitions/Agent/properties/Addresses/items/0"
+    }
+  },
+  "type": "object",
+  "properties": {
+    "ID": {
+      "type": "integer"
+    },
+    "Name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "UplineAgencyID": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "Addresses": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$ref": "#/definitions/Agent/properties/Addresses/items/0"
+      }
+    },
+    "Agencies": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$ref": "#/definitions/Agent/properties/Addresses/items/0/properties/Agencies/items/0"
+      }
+    },
+    "Agents": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "$ref": "#/definitions/Agent"
+      }
+    },
+    "UplineAgency": {
+      "$ref": "#/definitions/Agent/properties/Addresses/items/0/properties/Agencies/items/0"
+    }
+  },
+  "required": [
+    "ID",
+    "Name",
+    "UplineAgencyID",
+    "Addresses",
+    "Agencies",
+    "Agents",
+    "UplineAgency"
+  ]
+}

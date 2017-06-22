@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "id_token": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "access_token": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "token_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "refresh_token": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "message": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "id_token",
+    "access_token",
+    "token_type",
+    "refresh_token",
+    "message"
+  ]
+}

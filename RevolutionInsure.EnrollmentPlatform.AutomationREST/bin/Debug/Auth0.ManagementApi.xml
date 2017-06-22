@@ -1,0 +1,2176 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Auth0.ManagementApi</name>
+    </assembly>
+    <members>
+        <member name="T:Auth0.ManagementApi.IManagementApiClient">
+            <summary>
+            Represents the Management API client.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.IManagementApiClient.BlacklistedTokens">
+            <summary>
+            Contains all the methods to call the /blacklists/tokens endpoints.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.IManagementApiClient.ClientGrants">
+            <summary>
+            Contains all the methods to call the /client-grants endpoints
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.IManagementApiClient.Clients">
+            <summary>
+            Contains all the methods to call the /clients endpoints.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.IManagementApiClient.Connections">
+            <summary>
+            Contains all the methods to call the /connections endpoints.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.IManagementApiClient.DeviceCredentials">
+            <summary>
+            Contains all the methods to call the /device-credentials endpoints.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.IManagementApiClient.EmailProvider">
+            <summary>
+            Contains all the methods to call the /emails/provider endpoints.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.IManagementApiClient.Jobs">
+            <summary>
+            Contains all the methods to call the /jobs endpoints.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.IManagementApiClient.Logs">
+            <summary>
+            Contains a ll the methods to call the /logs endpoints.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.IManagementApiClient.ResourceServers">
+            <summary>
+            Contains all the methods to call the /resource-servers endpoints.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.IManagementApiClient.Rules">
+            <summary>
+            Contains all the methods to call the /rules endpoints.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.IManagementApiClient.Stats">
+            <summary>
+            Contains all the methods to call the /stats endpoints.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.IManagementApiClient.TenantSettings">
+            <summary>
+            Contains all the methods to call the /tenants/settings endpoints.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.IManagementApiClient.Tickets">
+            <summary>
+            Contains all the methods to call the /tickets endpoints.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.IManagementApiClient.UserBlocks">
+            <summary>
+            Contains all the methods to call the /user-blocks endpoints.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.IManagementApiClient.Users">
+            <summary>
+            Contains all the methods to call the /users endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.IManagementApiClient.GetLastApiInfo">
+            <summary>
+            Gets information about the last API call;
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.ManagementApiClient">
+            <summary>
+            Represents the Management API client.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.ManagementApiClient.BlacklistedTokens">
+            <summary>
+            Contains all the methods to call the /blacklists/tokens endpoints.
+            </summary>
+            <value>The blacklisted tokens.</value>
+        </member>
+        <member name="P:Auth0.ManagementApi.ManagementApiClient.ClientGrants">
+            <summary>
+            Contains all the methods to call the /client-grants endpoints
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.ManagementApiClient.Clients">
+            <summary>
+            Contains all the methods to call the /clients endpoints.
+            </summary>
+            <value>The clients.</value>
+        </member>
+        <member name="P:Auth0.ManagementApi.ManagementApiClient.Connections">
+            <summary>
+            Contains all the methods to call the /connections endpoints.
+            </summary>
+            <value>The connections.</value>
+        </member>
+        <member name="P:Auth0.ManagementApi.ManagementApiClient.DeviceCredentials">
+            <summary>
+            Contains all the methods to call the /device-credentials endpoints.
+            </summary>
+            <value>The device credentials.</value>
+        </member>
+        <member name="P:Auth0.ManagementApi.ManagementApiClient.EmailProvider">
+            <summary>
+            Contains all the methods to call the /emails/provider endpoints.
+            </summary>
+            <value>The email provider.</value>
+        </member>
+        <member name="P:Auth0.ManagementApi.ManagementApiClient.Jobs">
+            <summary>
+            Contains all the methods to call the /jobs endpoints.
+            </summary>
+            <value>The jobs.</value>
+        </member>
+        <member name="P:Auth0.ManagementApi.ManagementApiClient.Logs">
+            <summary>
+            Contains all the methods to call the /logs endpoints.
+            </summary>
+            <value>The rules.</value>
+        </member>
+        <member name="P:Auth0.ManagementApi.ManagementApiClient.ResourceServers">
+            <summary>
+            Contains all the methods to call the /resource-servers endpoints.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.ManagementApiClient.Rules">
+            <summary>
+            Contains all the methods to call the /rules endpoints.
+            </summary>
+            <value>The rules.</value>
+        </member>
+        <member name="P:Auth0.ManagementApi.ManagementApiClient.Stats">
+            <summary>
+            Contains all the methods to call the /stats endpoints.
+            </summary>
+            <value>The stats.</value>
+        </member>
+        <member name="P:Auth0.ManagementApi.ManagementApiClient.TenantSettings">
+            <summary>
+            Contains all the methods to call the /tenants/settings endpoints.
+            </summary>
+            <value>The tenant settings.</value>
+        </member>
+        <member name="P:Auth0.ManagementApi.ManagementApiClient.Tickets">
+            <summary>
+            Contains all the methods to call the /tickets endpoints.
+            </summary>
+            <value>The tickets.</value>
+        </member>
+        <member name="P:Auth0.ManagementApi.ManagementApiClient.UserBlocks">
+            <summary>
+            Contains all the methods to call the /user-blocks endpoints.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.ManagementApiClient.Users">
+            <summary>
+            Contains all the methods to call the /users endpoints.
+            </summary>
+            <value>The users.</value>
+        </member>
+        <member name="M:Auth0.ManagementApi.ManagementApiClient.GetLastApiInfo">
+            <summary>
+            Gets information about the last API call;
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.ManagementApiClient.#ctor(System.String,System.Uri,Auth0.Core.Http.DiagnosticsHeader,System.Net.Http.HttpMessageHandler)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Auth0.ManagementApi.ManagementApiClient"/> class.
+            </summary>
+            <param name="token">The token.</param>
+            <param name="baseUri">The base URI.</param>
+            <param name="diagnostics">The diagnostics.</param>
+            <param name="handler">The <see cref="T:System.Net.Http.HttpMessageHandler"/> which is used for HTTP requests</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.ManagementApiClient.#ctor(System.String,System.Uri,Auth0.Core.Http.DiagnosticsHeader)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Auth0.ManagementApi.ManagementApiClient"/> class.
+            </summary>
+            <param name="token">The token.</param>
+            <param name="baseUri">The base URI.</param>
+            <param name="diagnostics">The diagnostics.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.ManagementApiClient.#ctor(System.String,System.Uri,System.Net.Http.HttpMessageHandler)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Auth0.ManagementApi.ManagementApiClient"/> class.
+            </summary>
+            <param name="token">The token.</param>
+            <param name="baseUri">The base URI.</param>
+            <param name="handler">The <see cref="T:System.Net.Http.HttpMessageHandler"/> which is used for HTTP requests</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.ManagementApiClient.#ctor(System.String,System.Uri)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Auth0.ManagementApi.ManagementApiClient"/> class.
+            </summary>
+            <param name="token">The token.</param>
+            <param name="baseUri">The base URI.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.ManagementApiClient.#ctor(System.String,System.String,Auth0.Core.Http.DiagnosticsHeader,System.Net.Http.HttpMessageHandler)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Auth0.ManagementApi.ManagementApiClient"/> class.
+            </summary>
+            <param name="token">The token.</param>
+            <param name="domain">Your Auth0 domain, e.g. mydomain.auth0.com.</param>
+            <param name="diagnostics">The diagnostics.</param>
+            <param name="handler">The <see cref="T:System.Net.Http.HttpMessageHandler"/> which is used for HTTP requests</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.ManagementApiClient.#ctor(System.String,System.String,Auth0.Core.Http.DiagnosticsHeader)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Auth0.ManagementApi.ManagementApiClient"/> class.
+            </summary>
+            <param name="token">The token.</param>
+            <param name="domain">Your Auth0 domain, e.g. mydomain.auth0.com.</param>
+            <param name="diagnostics">The diagnostics.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.ManagementApiClient.#ctor(System.String,System.String,System.Net.Http.HttpMessageHandler)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Auth0.ManagementApi.ManagementApiClient"/> class.
+            </summary>
+            <param name="token">The token.</param>
+            <param name="domain">Your Auth0 domain, e.g. mydomain.auth0.com.</param>
+            <param name="handler">The <see cref="T:System.Net.Http.HttpMessageHandler"/> which is used for HTTP requests</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.ManagementApiClient.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Auth0.ManagementApi.ManagementApiClient"/> class.
+            </summary>
+            <param name="token">The token.</param>
+            <param name="domain">Your Auth0 domain, e.g. mydomain.auth0.com.</param>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.BlacklistedTokensClient">
+            <summary>
+            Contains all the methods to call the /blacklists/tokens endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.BlacklistedTokensClient.#ctor(Auth0.Core.Http.IApiConnection)">
+            <summary>
+            Creates a new instance of the ClientBase class.
+            </summary>
+            <param name="connection">The <see cref="T:Auth0.Core.Http.IApiConnection" /> which is used to communicate with the API.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.BlacklistedTokensClient.GetAllAsync(System.String)">
+            <summary>
+            Gets all the blacklisted claims.
+            </summary>
+            <param name="aud">The aud claim for which you want to get blacklisted tokens. This is your API Key.</param>
+            <returns>A list of <see cref="T:Auth0.Core.BlacklistedToken" /> objects.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.BlacklistedTokensClient.CreateAsync(Auth0.ManagementApi.Models.BlacklistedTokenCreateRequest)">
+            <summary>
+            Blacklists a JWT token.
+            </summary>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.BlacklistedTokenCreateRequest" /> containing the information of the token to blacklist.</param>
+            <returns>Task.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.ClientBase">
+            <summary>
+            The base class from which all clients inherit. Give clients access to the underlying <see cref="T:Auth0.Core.Http.IApiConnection"/>.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Clients.ClientBase.Connection">
+            <summary>
+            The <see cref="T:Auth0.Core.Http.IApiConnection"/> which is used to make all API calls.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ClientBase.#ctor(Auth0.Core.Http.IApiConnection)">
+            <summary>
+            Creates a new instance of the ClientBase class.
+            </summary>
+            <param name="connection">The <see cref="T:Auth0.Core.Http.IApiConnection"/> which is used to communicate with the API.</param>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.ClientGrantsClient">
+            <summary>
+            Contains all methods to work with Client Grants.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ClientGrantsClient.#ctor(Auth0.Core.Http.ApiConnection)">
+            <summary>
+            Creates a new instance of the Client Grants client.
+            </summary>
+            <param name="connection">The <see cref="T:Auth0.Core.Http.IApiConnection" /> which is used to communicate with the API.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ClientGrantsClient.CreateAsync(Auth0.ManagementApi.Models.ClientGrantCreateRequest)">
+            <summary>
+            Creates a new Client Grant
+            </summary>
+            <param name="request">The request containing the properties of the Client Grant.</param>
+            <returns>The new <see cref="T:Auth0.Core.ClientGrant"/></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ClientGrantsClient.DeleteAsync(System.String)">
+            <summary>
+            Deletes a client grant.
+            </summary>
+            <param name="id">The identifier of the Client Grant to delete.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ClientGrantsClient.GetAllAsync(System.String)">
+            <summary>
+            Gets a list of all the client grants.
+            </summary>
+            <param name="audience">The audience according to which you want to filter the returned client grants.</param>
+            <returns>A list of client grants</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ClientGrantsClient.UpdateAsync(System.String,Auth0.ManagementApi.Models.ClientGrantUpdateRequest)">
+            <summary>
+            Updates a client grant
+            </summary>
+            <param name="id">The identifier of the client grant to update.</param>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.ClientGrantUpdateRequest"/> containing the properties to update.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.ClientsClient">
+            <summary>
+            Contains all the methods to call the /clients endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ClientsClient.#ctor(Auth0.Core.Http.IApiConnection)">
+            <summary>
+            Creates a new instance of the ClientBase class.
+            </summary>
+            <param name="connection">The <see cref="T:Auth0.Core.Http.IApiConnection" /> which is used to communicate with the API.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ClientsClient.CreateAsync(Auth0.ManagementApi.Models.ClientCreateRequest)">
+            <summary>
+            Creates a new client application.
+            </summary>
+            <param name="request">The request containing the properties of the new client.</param>
+            <returns>Task&lt;Core.Client&gt;.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ClientsClient.DeleteAsync(System.String)">
+            <summary>
+            Deletes a client and all its related assets (like rules, connections, etc) given its id.
+            </summary>
+            <param name="id">The id of the client to delete.</param>
+            <returns>Task.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ClientsClient.GetAsync(System.String,System.String,System.Boolean)">
+            <summary>
+            Retrieves a client by its id.
+            </summary>
+            <param name="id">The id of the client to retrieve</param>
+            <param name="fields">A comma separated list of fields to include or exclude (depending on includeFields) from the
+            result, empty to retrieve all fields</param>
+            <param name="includeFields">true if the fields specified are to be included in the result, false otherwise (defaults to
+            true)</param>
+            <returns>Task&lt;Core.Client&gt;.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ClientsClient.GetAllAsync(System.String,System.Boolean)">
+            <summary>
+            Retrieves a list of all client applications. Accepts a list of fields to include or exclude.
+            </summary>
+            <param name="fields">A comma separated list of fields to include or exclude (depending on includeFields) from the
+            result, empty to retrieve all fields</param>
+            <param name="includeFields">true if the fields specified are to be included in the result, false otherwise (defaults to
+            true)</param>
+            <returns>Task&lt;IList&lt;Core.Client&gt;&gt;.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ClientsClient.UpdateAsync(System.String,Auth0.ManagementApi.Models.ClientUpdateRequest)">
+            <summary>
+            Updates a client application.
+            </summary>
+            <param name="id">The id of the client you want to update.</param>
+            <param name="request">The request containing the properties of the client you want to update.</param>
+            <returns>Task&lt;Core.Client&gt;.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.ConnectionsClient">
+            <summary>
+            Contains all the methods to call the /connections endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ConnectionsClient.#ctor(Auth0.Core.Http.IApiConnection)">
+            <summary>
+            Creates a new instance of the ClientBase class.
+            </summary>
+            <param name="connection">The <see cref="T:Auth0.Core.Http.IApiConnection" /> which is used to communicate with the API.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ConnectionsClient.CreateAsync(Auth0.ManagementApi.Models.ConnectionCreateRequest)">
+            <summary>
+            Creates a new connection according to the request.
+            </summary>
+            <param name="request">The request containing the properties for the new connection.</param>
+            <returns>A <see cref="T:Auth0.Core.Connection" /> containing the newly created Connection.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ConnectionsClient.DeleteAsync(System.String)">
+            <summary>
+            Deletes a connection and all its users.
+            </summary>
+            <param name="id">The id of the connection to delete.</param>
+            <returns>Task.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ConnectionsClient.DeleteUserAsync(System.String,System.String)">
+            <summary>
+            Deletes a specified connection user by its email 
+            </summary>
+            <remarks>
+            Currently only database connections are supported and you cannot delete all users from specific connection
+            </remarks>
+            <param name="id">The identifier of the connection</param>
+            <param name="email">The email of the user to delete</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ConnectionsClient.GetAsync(System.String,System.String,System.Boolean)">
+            <summary>
+            Retrieves a connection by its <paramref name="id" />
+            </summary>
+            <param name="id">The id of the connection to retrieve.</param>
+            <param name="fields">A comma separated list of fields to include or exclude (depending on include_fields) from the result, empty to retrieve all fields.</param>
+            <param name="includeFields">True if the fields specified are to be included in the result, false otherwise (defaults to true).</param>
+            <returns>The <see cref="T:Auth0.Core.Connection" />.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ConnectionsClient.GetAllAsync(System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            Retrieves every connection matching the specified strategy. All connections are retrieved if no strategy is being specified. Accepts a list of fields to include or exclude in the resulting list of connection objects.
+            </summary>
+            <param name="strategy">Provide a type of strategy to only retrieve connections with that strategy.</param>
+            <param name="fields">A comma separated list of fields to include or exclude (depending on include_fields) from the result, empty to retrieve all fields.</param>
+            <param name="includeFields">True if the fields specified are to be included in the result, false otherwise (defaults to true).</param>
+            <param name="name">Provide the name of the connection to retrieve</param>
+            <returns>A list of <see cref="T:Auth0.Core.Connection" /> objects matching the strategy.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ConnectionsClient.UpdateAsync(System.String,Auth0.ManagementApi.Models.ConnectionUpdateRequest)">
+            <summary>
+            Updates a connection.
+            </summary>
+            <param name="id">The id of the connection to update.</param>
+            <param name="request">The request containing the properties of the connection you wish to update.</param>
+            <returns>A <see cref="T:Auth0.Core.Connection" /> containing the updated connection.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.DeviceCredentialsClient">
+            <summary>
+            Contains all the methods to call the /device-credentials endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.DeviceCredentialsClient.#ctor(Auth0.Core.Http.ApiConnection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Auth0.ManagementApi.Clients.DeviceCredentialsClient"/> class.
+            </summary>
+            <param name="connection">The connection.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.DeviceCredentialsClient.GetAllAsync(System.String,System.Boolean,System.String,System.String,System.String)">
+            <summary>
+            Gets a list of all the device credentials.
+            </summary>
+            <param name="fields">A comma separated list of fields to include or exclude (depending on include_fields) from the result, empty to retrieve all fields.</param>
+            <param name="includeFields">True if the fields specified are to be excluded from the result, false otherwise (defaults to true).</param>
+            <param name="userId">The user id of the devices to retrieve</param>
+            <param name="clientId">The client id of the devices to retrieve.</param>
+            <param name="type">The type of credentials</param>
+            <returns>A list of <see cref="T:Auth0.Core.DeviceCredential" /> which conforms to the criteria specified.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.DeviceCredentialsClient.CreateAsync(Auth0.ManagementApi.Models.DeviceCredentialCreateRequest)">
+            <summary>
+            Creates a new device credential.
+            </summary>
+            <param name="request">The request containing the details of the device credential to create.</param>
+            <returns>Tnew newly created <see cref="T:Auth0.Core.DeviceCredential" /></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.DeviceCredentialsClient.DeleteAsync(System.String)">
+            <summary>
+            Deletes a device credential.
+            </summary>
+            <param name="id">The id of the device credential to delete</param>
+            <returns>Task.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.EmailProviderClient">
+            <summary>
+            Contains all the methods to call the /emails/provider endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.EmailProviderClient.#ctor(Auth0.Core.Http.IApiConnection)">
+            <summary>
+            Creates a new instance of the ClientBase class.
+            </summary>
+            <param name="connection">The <see cref="T:Auth0.Core.Http.IApiConnection" /> which is used to communicate with the API.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.EmailProviderClient.ConfigureAsync(Auth0.ManagementApi.Models.EmailProviderConfigureRequest)">
+            <summary>
+            Configures the email provider.
+            </summary>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.EmailProviderConfigureRequest" /> containing the configuration properties of the
+            provider.</param>
+            <returns>A <see cref="T:Auth0.Core.EmailProvider" /> instance containing the email provider details.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.EmailProviderClient.DeleteAsync">
+            <summary>
+            Deletes the email provider.
+            </summary>
+            <returns>Task.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.EmailProviderClient.GetAsync(System.String,System.Boolean)">
+            <summary>
+            Gets the email provider.
+            </summary>
+            <param name="fields">A comma separated list of fields to include or exclude (depending on
+            <paramref name="includeFields" />) from the result, empty to retrieve: name, enabled, settings fields.</param>
+            <param name="includeFields">True if the fields specified are to be excluded from the result, false otherwise (defaults
+            to true).</param>
+            <returns>A <see cref="T:Auth0.Core.EmailProvider" /> instance containing the email provider details.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.EmailProviderClient.UpdateAsync(Auth0.ManagementApi.Models.EmailProviderUpdateRequest)">
+            <summary>
+            Updates the email provider.
+            </summary>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.EmailProviderUpdateRequest" /> containing the configuration properties of the
+            email provider.</param>
+            <returns>A <see cref="T:Auth0.Core.EmailProvider" /> instance containing the email provider details.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.IBlacklistedTokensClient">
+            <summary>
+            Contains all the methods to call the /blacklists/tokens endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IBlacklistedTokensClient.CreateAsync(Auth0.ManagementApi.Models.BlacklistedTokenCreateRequest)">
+            <summary>
+            Blacklists a JWY token.
+            </summary>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.BlacklistedTokenCreateRequest"/> containing the information of the token to blacklist.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IBlacklistedTokensClient.GetAllAsync(System.String)">
+            <summary>
+            Gets all the blacklisted claims.
+            </summary>
+            <param name="aud">The aud claim for which you want to get blacklisted tokens. This is your API Key.</param>
+            <returns>A list of <see cref="T:Auth0.Core.BlacklistedToken"/> objects.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.IClientGrantsClient">
+            <summary>
+            Contains all methods to work with Client Grants.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IClientGrantsClient.CreateAsync(Auth0.ManagementApi.Models.ClientGrantCreateRequest)">
+            <summary>
+            Creates a new Client Grant
+            </summary>
+            <param name="request">The request containing the properties of the Client Grant.</param>
+            <returns>The new <see cref="T:Auth0.Core.ClientGrant"/></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IClientGrantsClient.DeleteAsync(System.String)">
+            <summary>
+            Deletes a client grant.
+            </summary>
+            <param name="id">The identifier of the Client Grant to delete.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IClientGrantsClient.GetAllAsync(System.String)">
+            <summary>
+            Gets a list of all the client grants.
+            </summary>
+            <param name="audience">The audience according to which you want to filter the returned client grants.</param>
+            <returns>A list of client grants</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IClientGrantsClient.UpdateAsync(System.String,Auth0.ManagementApi.Models.ClientGrantUpdateRequest)">
+            <summary>
+            Updates a client grant
+            </summary>
+            <param name="id">The identifier of the client grant to update.</param>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.ClientGrantUpdateRequest"/> containing the properties to update.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.IClientsClient">
+            <summary>
+            Contains all the methods to call the /clients endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IClientsClient.CreateAsync(Auth0.ManagementApi.Models.ClientCreateRequest)">
+            <summary>
+                Creates a new client application.
+            </summary>
+            <param name="request">The request containing the properties of the new client.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IClientsClient.DeleteAsync(System.String)">
+            <summary>
+                Deletes a client and all its related assets (like rules, connections, etc) given its id.
+            </summary>
+            <param name="id">The id of the client to delete.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IClientsClient.GetAllAsync(System.String,System.Boolean)">
+            <summary>
+                Retrieves a list of all client applications. Accepts a list of fields to include or exclude.
+            </summary>
+            <param name="fields">
+                A comma separated list of fields to include or exclude (depending on includeFields) from the
+                result, empty to retrieve all fields
+            </param>
+            <param name="includeFields">
+                true if the fields specified are to be included in the result, false otherwise (defaults to
+                true)
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IClientsClient.GetAsync(System.String,System.String,System.Boolean)">
+            <summary>
+                Retrieves a client by its id.
+            </summary>
+            <param name="id">The id of the client to retrieve</param>
+            <param name="fields">
+                A comma separated list of fields to include or exclude (depending on includeFields) from the
+                result, empty to retrieve all fields
+            </param>
+            <param name="includeFields">
+                true if the fields specified are to be included in the result, false otherwise (defaults to
+                true)
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IClientsClient.UpdateAsync(System.String,Auth0.ManagementApi.Models.ClientUpdateRequest)">
+            <summary>
+                Updates a client application.
+            </summary>
+            <param name="id">The id of the client you want to update.</param>
+            <param name="request">The request containing the properties of the client you want to update.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.IConnectionsClient">
+            <summary>
+            Contains all the methods to call the /connections endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IConnectionsClient.CreateAsync(Auth0.ManagementApi.Models.ConnectionCreateRequest)">
+            <summary>
+            Creates a new connection according to the request.
+            </summary>
+            <param name="request">The request containing the properties for the new connection.</param>
+            <returns>A <see cref="T:Auth0.Core.Connection"/> containing the newly created Connection.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IConnectionsClient.DeleteAsync(System.String)">
+            <summary>
+            Deletes a connection and all its users.
+            </summary>
+            <param name="id">The id of the connection to delete.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IConnectionsClient.DeleteUserAsync(System.String,System.String)">
+            <summary>
+            Deletes a specified connection user by its email 
+            </summary>
+            <remarks>
+            Currently only database connections are supported and you cannot delete all users from specific connection
+            </remarks>
+            <param name="id">The identifier of the connection</param>
+            <param name="email">The email of the user to delete</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IConnectionsClient.GetAllAsync(System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            Retrieves every connection matching the specified strategy. All connections are retrieved if no strategy is being specified. Accepts a list of fields to include or exclude in the resulting list of connection objects.
+            </summary>
+            <param name="strategy">Provide a type of strategy to only retrieve connections with that strategy.</param>
+            <param name="fields">A comma separated list of fields to include or exclude (depending on include_fields) from the result, empty to retrieve all fields.</param>
+            <param name="includeFields">True if the fields specified are to be included in the result, false otherwise (defaults to true).</param>
+            <param name="name">Provide the name of the connection to retrieve</param>
+            <returns>A list of <see cref="T:Auth0.Core.Connection"/> objects matching the strategy.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IConnectionsClient.GetAsync(System.String,System.String,System.Boolean)">
+            <summary>
+            Retrieves a connection by its <paramref name="id"/>
+            </summary>
+            <param name="id">The id of the connection to retrieve.</param>
+            <param name="fields">A comma separated list of fields to include or exclude (depending on include_fields) from the result, empty to retrieve all fields.</param>
+            <param name="includeFields">True if the fields specified are to be included in the result, false otherwise (defaults to true).</param>
+            <returns>The <see cref="T:Auth0.Core.Connection"/>.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IConnectionsClient.UpdateAsync(System.String,Auth0.ManagementApi.Models.ConnectionUpdateRequest)">
+            <summary>
+            Updates a connection.
+            </summary>
+            <param name="id">The id of the connection to update.</param>
+            <param name="request">The request containing the properties of the connection you wish to update.</param>
+            <returns>A <see cref="T:Auth0.Core.Connection"/> containing the updated connection.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.IDeviceCredentialsClient">
+            <summary>
+            Contains all the methods to call the /device-credentials endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IDeviceCredentialsClient.CreateAsync(Auth0.ManagementApi.Models.DeviceCredentialCreateRequest)">
+            <summary>
+            Creates a new device credential.
+            </summary>
+            <param name="request">The request containing the details of the device credential to create.</param>
+            <returns>Tnew newly created <see cref="T:Auth0.Core.DeviceCredential"/></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IDeviceCredentialsClient.DeleteAsync(System.String)">
+            <summary>
+            Deletes a device credential.
+            </summary>
+            <param name="id">The id of the device credential to delete</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IDeviceCredentialsClient.GetAllAsync(System.String,System.Boolean,System.String,System.String,System.String)">
+            <summary>
+            Gets a list of all the device credentials.
+            </summary>
+            <param name="fields">A comma separated list of fields to include or exclude (depending on include_fields) from the result, empty to retrieve all fields.</param>
+            <param name="includeFields">True if the fields specified are to be excluded from the result, false otherwise (defaults to true).</param>
+            <param name="userId">The user id of the devices to retrieve</param>
+            <param name="clientId">The client id of the devices to retrieve.</param>
+            <param name="type">The type of credentials</param>
+            <returns>A list of <see cref="T:Auth0.Core.DeviceCredential"/> which conforms to the criteria specified.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.IEmailProviderClient">
+            <summary>
+            Contains all the methods to call the /emails/provider endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IEmailProviderClient.ConfigureAsync(Auth0.ManagementApi.Models.EmailProviderConfigureRequest)">
+            <summary>
+                Configures the email provider.
+            </summary>
+            <param name="request">
+                The <see cref="T:Auth0.ManagementApi.Models.EmailProviderConfigureRequest" /> containing the configuration properties of the
+                provider.
+            </param>
+            <returns>A <see cref="T:Auth0.Core.EmailProvider" /> instance containing the email provider details.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IEmailProviderClient.DeleteAsync">
+            <summary>
+                Deletes the email provider.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IEmailProviderClient.GetAsync(System.String,System.Boolean)">
+            <summary>
+                Gets the email provider.
+            </summary>
+            <param name="fields">
+                A comma separated list of fields to include or exclude (depending on
+                <paramref name="includeFields" />) from the result, empty to retrieve: name, enabled, settings fields.
+            </param>
+            <param name="includeFields">
+                True if the fields specified are to be excluded from the result, false otherwise (defaults
+                to true).
+            </param>
+            <returns>A <see cref="T:Auth0.Core.EmailProvider" /> instance containing the email provider details.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IEmailProviderClient.UpdateAsync(Auth0.ManagementApi.Models.EmailProviderUpdateRequest)">
+            <summary>
+                Updates the email provider.
+            </summary>
+            <param name="request">
+                The <see cref="T:Auth0.ManagementApi.Models.EmailProviderUpdateRequest" /> containing the configuration properties of the
+                email provider.
+            </param>
+            <returns>A <see cref="T:Auth0.Core.EmailProvider" /> instance containing the email provider details.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.IJobsClient">
+            <summary>
+            Contains all the methods to call the /jobs endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IJobsClient.GetAsync(System.String)">
+            <summary>
+            Gets a job.
+            </summary>
+            <remarks>
+            This is useful to check the status of a job.
+            </remarks>
+            <param name="id">The ID of the job to retrieve.</param>
+            <returns>A <see cref="T:Auth0.Core.Job"/> instance containing the information about the job.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IJobsClient.ImportUsersAsync(System.String,System.String,System.IO.Stream,System.Nullable{System.Boolean},System.String)">
+            <summary>
+            Imports users to a connection from a file using a long running job. 
+            </summary>
+            <remarks>
+            The documentation for the file format is <a href="https://auth0.com/docs/bulk-import">here</a>.
+            </remarks>
+            <param name="connectionId">The connection identifier.</param>
+            <param name="fileName">Name of the file.</param>
+            <param name="file">The file.</param>
+            <param name="upsert">Update the user if already exists</param>
+            <param name="externalId">Customer defined id</param>
+            <returns>Task&lt;Job&gt;.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IJobsClient.SendVerificationEmailAsync(Auth0.ManagementApi.Models.VerifyEmailJobRequest)">
+            <summary>
+            Send an email to the specified user that asks them to click a link to verify their email address.
+            </summary>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.VerifyEmailJobRequest"/> containing the information of the user whose email you want verified.</param>
+            <returns>A <see cref="T:Auth0.Core.Job"/> instance containing the information about the job.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.ILogsClient">
+            <summary>
+            Contains all the methods to call the /logs endpoints
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ILogsClient.GetAllAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Nullable{System.Int32},System.String)">
+            <summary>
+            Retrieves log entries that match the specified search criteria
+            </summary>
+            <remarks>
+            Will list all entries if no criteria is used. You can search with a criteria using the q parameter or you can search by a specific log ID (search by checkpoint)
+            </remarks>
+            <param name="page">The page number. Zero based</param>
+            <param name="perPage">The amount of entries per page. Default: 50. Max value: 100</param>
+            <param name="sort">The field to use for sorting. Use field:order where order is 1 for ascending and -1 for descending. For example date:-1</param>
+            <param name="fields">A comma separated list of fields to include or exclude (depending on include_fields) from the result, empty to retrieve all fields</param>
+            <param name="includeFields">True if the fields specified are to be included in the result, false otherwise. Defaults to true</param>
+            <param name="includeTotals">True if a query summary must be included in the result, false otherwise. Default false.</param>
+            <param name="from">Log Event Id to start retrieving logs. You can limit the amount of logs using the take parameter.</param>
+            <param name="take">The total amount of entries to retrieve when using the from parameter. Default: 50. Max value: 100</param>
+            <param name="q">Query in Lucene query string syntax.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ILogsClient.GetAsync(System.String)">
+            <summary>
+            Retrieves the data related to the log entry identified by id. This returns a single log entry representation as specified in the schema.
+            </summary>
+            <param name="id">The identifier of the log entry to retrieve</param>
+            <returns></returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.IResourceServersClient">
+            <summary>
+            Contains all the methods to call the /resource-server endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IResourceServersClient.CreateAsync(Auth0.ManagementApi.Models.ResourceServerCreateRequest)">
+            <summary>
+            Creates a new resource server
+            </summary>
+            <param name="request">Contains the information for the resource server to create</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IResourceServersClient.DeleteAsync(System.String)">
+            <summary>
+            Deletes a resource server
+            </summary>
+            <param name="id">The id of the resource server to delete</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IResourceServersClient.GetAsync(System.String)">
+            <summary>
+            Get a resource server by its id
+            </summary>
+            <param name="id">The id of the resource server</param>
+            <returns>A <see cref="T:Auth0.Core.ResourceServer"/></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IResourceServersClient.UpdateAsync(System.String,Auth0.ManagementApi.Models.ResourceServerUpdateRequest)">
+            <summary>
+            Updates a resource server
+            </summary>
+            <param name="id">The id of the resource server to update</param>
+            <param name="request">Contains the information for the resource server to update</param>
+            <returns></returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.IRulesClient">
+            <summary>
+            Contains all the methods to call the /rules endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IRulesClient.CreateAsync(Auth0.ManagementApi.Models.RuleCreateRequest)">
+            <summary>
+                Creates a new rule according to the request.
+            </summary>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.RuleCreateRequest" /> containing the details of the rule to create.</param>
+            <returns>The newly created <see cref="T:Auth0.Core.Rule" />.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IRulesClient.DeleteAsync(System.String)">
+            <summary>
+                Deletes a rule.
+            </summary>
+            <param name="id">The ID of the rule to delete.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IRulesClient.GetAllAsync(System.Nullable{System.Boolean},System.String,System.Boolean,System.String)">
+            <summary>
+                Retrieves a list of all rules.
+            </summary>
+            <param name="enabled">If provided retrieves rules that match the value, otherwise all rules are retrieved.</param>
+            <param name="fields">
+                A comma separated list of fields to include or exclude (depending on
+                <paramref name="includeFields" />) from the result, empty to retrieve all fields.
+            </param>
+            <param name="includeFields">
+                True if the fields specified are to be included in the result, false otherwise (defaults to
+                true).
+            </param>
+            <param name="stage">Retrieves rules that match the execution stage (defaults to login_success).</param>
+            <returns>A list of <see cref="T:Auth0.Core.Rule" /> objects.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IRulesClient.GetAsync(System.String,System.String,System.Boolean)">
+            <summary>
+                Retrieves a rule by its ID.
+            </summary>
+            <param name="id">The ID of the rule to retrieve.</param>
+            <param name="fields">
+                A comma separated list of fields to include or exclude (depending on
+                <paramref name="includeFields" />) from the result, empty to retrieve all fields.
+            </param>
+            <param name="includeFields">
+                True if the fields specified are to be included in the result, false otherwise (defaults to
+                true).
+            </param>
+            <returns>The <see cref="T:Auth0.Core.Rule" />.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IRulesClient.UpdateAsync(System.String,Auth0.ManagementApi.Models.RuleUpdateRequest)">
+            <summary>
+                Updates a rule.
+            </summary>
+            <param name="id">The ID of the rule to update.</param>
+            <param name="request">A <see cref="T:Auth0.ManagementApi.Models.RuleUpdateRequest" /> containing the information to update.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.IStatsClient">
+            <summary>
+            Contains all the methods to call the /stats endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IStatsClient.GetActiveUsersAsync">
+            <summary>
+                Gets the active users count (logged in during the last 30 days).
+            </summary>
+            <returns>The number of users.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IStatsClient.GetDailyStatsAsync(System.DateTime,System.DateTime)">
+            <summary>
+            Gets the daily stats for a particular period.
+            </summary>
+            <param name="from">The first day of the period (inclusive).</param>
+            <param name="to">The last day of the period (inclusive).</param>
+            <returns>A list of <see cref="T:Auth0.Core.DailyStatistics"/> containing the statistics for each day in the period.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.ITentantSettingsClient">
+            <summary>
+            Contains all the methods to call the /tenants/settings endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ITentantSettingsClient.GetAsync(System.String,System.Boolean)">
+            <summary>
+                Gets the settings for the tenant.
+            </summary>
+            <param name="fields">
+                A comma separated list of fields to include or exclude (depending on includeFields) from the
+                result, empty to retrieve all fields
+            </param>
+            <param name="includeFields">
+                true if the fields specified are to be included in the result, false otherwise (defaults to
+                true)
+            </param>
+            <returns>A <see cref="T:Auth0.Core.TenantSettings" /> containing the settings for the tenant.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ITentantSettingsClient.UpdateAsync(Auth0.ManagementApi.Models.TenantSettingsUpdateRequest)">
+            <summary>
+                Updates the settings for the tenant.
+            </summary>
+            <param name="request">
+                A <see cref="T:Auth0.ManagementApi.Models.TenantSettingsUpdateRequest" /> containing the settings for the tenant which are to
+                be updated.
+            </param>
+            <returns>A <see cref="T:Auth0.Core.TenantSettings" /> containing the updated settings for the tenant.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.ITicketsClient">
+            <summary>
+            Contains all the methods to call the /tickets endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ITicketsClient.CreateEmailVerificationTicketAsync(Auth0.ManagementApi.Models.EmailVerificationTicketRequest)">
+            <summary>
+            Creates an email verification ticket.
+            </summary>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.EmailVerificationTicketRequest"/> containing the details of the ticket to create.</param>
+            <returns>The <see cref="T:Auth0.Core.Ticket"/>.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ITicketsClient.CreatePasswordChangeTicketAsync(Auth0.ManagementApi.Models.PasswordChangeTicketRequest)">
+            <summary>
+            Creates a password change ticket.
+            </summary>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.PasswordChangeTicketRequest"/> containing the details of the ticket to create.</param>
+            <returns>The <see cref="T:Auth0.Core.Ticket"/>.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.IUserBlocksClient">
+            <summary>
+            Contains all the methods for the /user-blocks endpoints
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IUserBlocksClient.GetByIdentifierAsync(System.String)">
+            <summary>
+            Get a user's blocks by identifier.
+            </summary>
+            <param name="identifier">The identifier of the user. Can be a user's email address, username or phone number</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IUserBlocksClient.GetByUserIdAsync(System.String)">
+            <summary>
+            Get a user's blocks by user id.
+            </summary>
+            <param name="id">The id of the user</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IUserBlocksClient.UnblockByIdentifierAsync(System.String)">
+            <summary>
+            Unblock a user by their identifier.
+            </summary>
+            <param name="identifier">The identifier of the user. Can be a user's email address, username or phone number</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IUserBlocksClient.UnblockByUserIdAsync(System.String)">
+            <summary>
+            Unblock a user by their id.
+            </summary>
+            <param name="id">The id of the user</param>
+            <returns></returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.IUsersClient">
+            <summary>
+            Contains all the methods to call the /users endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IUsersClient.CreateAsync(Auth0.ManagementApi.Models.UserCreateRequest)">
+            <summary>
+                Creates a new user.
+            </summary>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.UserCreateRequest" /> containing the properties of the user to create.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IUsersClient.DeleteAllAsync">
+            <summary>
+                Deletes all users. Use with caution!
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IUsersClient.DeleteAsync(System.String)">
+            <summary>
+                Deletes a user.
+            </summary>
+            <param name="id">The id of the user to delete.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IUsersClient.DeleteMultifactorProviderAsync(System.String,System.String)">
+            <summary>
+                Deletes a user's multifactor provider.
+            </summary>
+            <param name="id">The id of the user who multi factor provider to delete.</param>
+            <param name="provider">The type of the multifactor provider. Supported values 'duo' or 'google-authenticator'</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IUsersClient.GetAllAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.String,System.String,System.String,System.Nullable{System.Boolean},System.String,System.String)">
+            <summary>
+                Lists or search for users based on criteria.
+            </summary>
+            <param name="page">The page number. Zero based.</param>
+            <param name="perPage">The amount of entries per page.</param>
+            <param name="includeTotals">True if a query summary must be included in the result.</param>
+            <param name="sort">The field to use for sorting. 1 == ascending and -1 == descending</param>
+            <param name="connection">Connection filter.</param>
+            <param name="fields">
+                A comma separated list of fields to include or exclude (depending on
+                <paramref name="includeFields" />) from the result, empty to retrieve all fields.
+            </param>
+            <param name="includeFields">
+                True if the fields specified are to be included in the result, false otherwise. Defaults to
+                true.
+            </param>
+            <param name="q">
+                Query in Lucene query string syntax. Only fields in app_metadata, user_metadata or the normalized user
+                profile are searchable.
+            </param>
+            <param name="searchEngine">Use 'v2' if you want to try the new search engine, or 'v1' for the old search engine.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IUsersClient.GetAsync(System.String,System.String,System.Boolean)">
+            <summary>
+                Gets a user.
+            </summary>
+            <param name="id">The id of the user to retrieve.</param>
+            <param name="fields">
+                A comma separated list of fields to include or exclude (depending on includeFields) from the
+                result, empty to retrieve all fields
+            </param>
+            <param name="includeFields">
+                true if the fields specified are to be included in the result, false otherwise (defaults to
+                true)
+            </param>
+            <returns>The <see cref="T:Auth0.Core.User" />.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IUsersClient.GetLogsAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean})">
+            <summary>
+            Retrieve every log event for a specific user id
+            </summary>
+            <param name="userId">The user id of the logs to retrieve</param>
+            <param name="page">The zero-based page number</param>
+            <param name="perPage">The amount of entries per page. Default: 50. Max value: 100</param>
+            <param name="sort">The field to use for sorting. Use field:order where order is 1 for ascending and -1 for descending. For example date:-1</param>
+            <param name="includeTotals">True if a query summary must be included in the result, false otherwise. Default false.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IUsersClient.LinkAccountAsync(System.String,Auth0.ManagementApi.Models.UserAccountLinkRequest)">
+            <summary>
+                Links a secondary account to a primary account.
+            </summary>
+            <param name="id">The ID of the primary account.</param>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.UserAccountLinkRequest" /> containing details of the secondary account to link.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IUsersClient.LinkAccountAsync(System.String,System.String,System.String)">
+            <summary>
+                Links a secondary account to a primary account.
+            </summary>
+            <param name="id">The ID of the primary account.</param>
+            <param name="primaryJwtToken">The JWT of the primary account.</param>
+            <param name="secondaryJwtToken">The JWT for the secondary account you wish to link.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IUsersClient.UnlinkAccountAsync(System.String,System.String,System.String)">
+            <summary>
+                Unlinks user accounts
+            </summary>
+            <param name="primaryUserId">The ID of the primary account.</param>
+            <param name="provider">The type of the identity provider.</param>
+            <param name="secondaryUserId">The ID for the secondary account</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.IUsersClient.UpdateAsync(System.String,Auth0.ManagementApi.Models.UserUpdateRequest)">
+            <summary>
+                Updates a user.
+            </summary>
+            <param name="id">The id of the user to update.</param>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.UserUpdateRequest" /> containing the information you wish to update.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.JobsClient">
+            <summary>
+            Contains all the methods to call the /jobs endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.JobsClient.#ctor(Auth0.Core.Http.IApiConnection)">
+            <summary>
+            Creates a new instance of the ClientBase class.
+            </summary>
+            <param name="connection">The <see cref="T:Auth0.Core.Http.IApiConnection" /> which is used to communicate with the API.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.JobsClient.GetAsync(System.String)">
+            <summary>
+            Gets a job.
+            </summary>
+            <param name="id">The ID of the job to retrieve.</param>
+            <returns>A <see cref="T:Auth0.Core.Job" /> instance containing the information about the job.</returns>
+            <remarks>This is useful to check the status of a job.</remarks>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.JobsClient.ImportUsersAsync(System.String,System.String,System.IO.Stream,System.Nullable{System.Boolean},System.String)">
+            <summary>
+            Imports users to a connection from a file using a long running job.
+            </summary>
+            <param name="connectionId">The connection identifier.</param>
+            <param name="fileName">Name of the file.</param>
+            <param name="file">The file.</param>
+            <param name="upsert">Update the user if already exists</param>
+            <param name="externalId">Customer defined id</param>
+            <returns>Task&lt;Job&gt;.</returns>
+            <remarks>The documentation for the file format is <a href="https://auth0.com/docs/bulk-import">here</a>.</remarks>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.JobsClient.SendVerificationEmailAsync(Auth0.ManagementApi.Models.VerifyEmailJobRequest)">
+            <summary>
+            Send an email to the specified user that asks them to click a link to verify their email address.
+            </summary>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.VerifyEmailJobRequest" /> containing the information of the user whose email you want verified.</param>
+            <returns>A <see cref="T:Auth0.Core.Job" /> instance containing the information about the job.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.LogsClient">
+            <summary>
+            Contains all the methods to call the /logs endpoints
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.LogsClient.#ctor(Auth0.Core.Http.IApiConnection)">
+            <summary>
+            Creates a new instance on <see cref="T:Auth0.ManagementApi.Clients.LogsClient"/>
+            </summary>
+            <param name="connection">The <see cref="T:Auth0.Core.Http.IApiConnection"/> which is used to communicate with the API.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.LogsClient.GetAllAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Nullable{System.Int32},System.String)">
+            <summary>
+            Retrieves log entries that match the specified search criteria
+            </summary>
+            <remarks>
+            Will list all entries if no criteria is used. You can search with a criteria using the q parameter or you can search by a specific log ID (search by checkpoint)
+            </remarks>
+            <param name="page">The page number. Zero based</param>
+            <param name="perPage">The amount of entries per page. Default: 50. Max value: 100</param>
+            <param name="sort">The field to use for sorting. Use field:order where order is 1 for ascending and -1 for descending. For example date:-1</param>
+            <param name="fields">A comma separated list of fields to include or exclude (depending on include_fields) from the result, empty to retrieve all fields</param>
+            <param name="includeFields">True if the fields specified are to be included in the result, false otherwise. Defaults to true</param>
+            <param name="includeTotals">True if a query summary must be included in the result, false otherwise. Default false.</param>
+            <param name="from">Log Event Id to start retrieving logs. You can limit the amount of logs using the take parameter.</param>
+            <param name="take">The total amount of entries to retrieve when using the from parameter. Default: 50. Max value: 100</param>
+            <param name="q">Query in Lucene query string syntax.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.LogsClient.GetAsync(System.String)">
+            <summary>
+            Retrieves the data related to the log entry identified by id. This returns a single log entry representation as specified in the schema.
+            </summary>
+            <param name="id">The identifier of the log entry to retrieve</param>
+            <returns></returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.ResourceServersClient">
+            <summary>
+            Contains all the methods to call the /resource-server endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ResourceServersClient.#ctor(Auth0.Core.Http.IApiConnection)">
+            <summary>
+            Creates a new instance of the resource servers client.
+            </summary>
+            <param name="connection">The <see cref="T:Auth0.Core.Http.IApiConnection" /> which is used to communicate with the API.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ResourceServersClient.CreateAsync(Auth0.ManagementApi.Models.ResourceServerCreateRequest)">
+            <summary>
+            Creates a new resource server
+            </summary>
+            <param name="request">Contains the information for the resource server to create</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ResourceServersClient.DeleteAsync(System.String)">
+            <summary>
+            Deletes a resource server
+            </summary>
+            <param name="id">The id of the resource server to delete</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ResourceServersClient.GetAsync(System.String)">
+            <summary>
+            Get a resource server by its id
+            </summary>
+            <param name="id">The id of the resource server</param>
+            <returns>A <see cref="T:Auth0.Core.ResourceServer"/></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.ResourceServersClient.UpdateAsync(System.String,Auth0.ManagementApi.Models.ResourceServerUpdateRequest)">
+            <summary>
+            Updates a resource server
+            </summary>
+            <param name="id">The id of the resource server to update</param>
+            <param name="request">Contains the information for the resource server to update</param>
+            <returns></returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.RulesClient">
+            <summary>
+            Contains all the methods to call the /rules endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.RulesClient.#ctor(Auth0.Core.Http.ApiConnection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Auth0.ManagementApi.Clients.RulesClient"/> class.
+            </summary>
+            <param name="connection">The connection.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.RulesClient.CreateAsync(Auth0.ManagementApi.Models.RuleCreateRequest)">
+            <summary>
+            Creates a new rule according to the request.
+            </summary>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.RuleCreateRequest" /> containing the details of the rule to create.</param>
+            <returns>The newly created <see cref="T:Auth0.Core.Rule" />.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.RulesClient.DeleteAsync(System.String)">
+            <summary>
+            Deletes a rule.
+            </summary>
+            <param name="id">The ID of the rule to delete.</param>
+            <returns>Task.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.RulesClient.GetAllAsync(System.Nullable{System.Boolean},System.String,System.Boolean,System.String)">
+            <summary>
+            Retrieves a list of all rules.
+            </summary>
+            <param name="enabled">If provided retrieves rules that match the value, otherwise all rules are retrieved.</param>
+            <param name="fields">A comma separated list of fields to include or exclude (depending on
+            <paramref name="includeFields" />) from the result, empty to retrieve all fields.</param>
+            <param name="includeFields">True if the fields specified are to be included in the result, false otherwise (defaults to
+            true).</param>
+            <param name="stage">Retrieves rules that match the execution stage (defaults to login_success).</param>
+            <returns>A list of <see cref="T:Auth0.Core.Rule" /> objects.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.RulesClient.GetAsync(System.String,System.String,System.Boolean)">
+            <summary>
+            Retrieves a rule by its ID.
+            </summary>
+            <param name="id">The ID of the rule to retrieve.</param>
+            <param name="fields">A comma separated list of fields to include or exclude (depending on
+            <paramref name="includeFields" />) from the result, empty to retrieve all fields.</param>
+            <param name="includeFields">True if the fields specified are to be included in the result, false otherwise (defaults to
+            true).</param>
+            <returns>The <see cref="T:Auth0.Core.Rule" />.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.RulesClient.UpdateAsync(System.String,Auth0.ManagementApi.Models.RuleUpdateRequest)">
+            <summary>
+            Updates a rule.
+            </summary>
+            <param name="id">The ID of the rule to update.</param>
+            <param name="request">A <see cref="T:Auth0.ManagementApi.Models.RuleUpdateRequest" /> containing the information to update.</param>
+            <returns>Task&lt;Rule&gt;.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.StatsClient">
+            <summary>
+            Contains all the methods to call the /stats endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.StatsClient.#ctor(Auth0.Core.Http.IApiConnection)">
+            <summary>
+            Creates a new instance of the ClientBase class.
+            </summary>
+            <param name="connection">The <see cref="T:Auth0.Core.Http.IApiConnection" /> which is used to communicate with the API.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.StatsClient.GetActiveUsersAsync">
+            <summary>
+            Gets the active users count (logged in during the last 30 days).
+            </summary>
+            <returns>The number of users.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.StatsClient.GetDailyStatsAsync(System.DateTime,System.DateTime)">
+            <summary>
+            Gets the daily stats for a particular period.
+            </summary>
+            <param name="from">The first day of the period (inclusive).</param>
+            <param name="to">The last day of the period (inclusive).</param>
+            <returns>A list of <see cref="T:Auth0.Core.DailyStatistics" /> containing the statistics for each day in the period.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.TentantSettingsClient">
+            <summary>
+            Contains all the methods to call the /tenants/settings endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.TentantSettingsClient.#ctor(Auth0.Core.Http.IApiConnection)">
+            <summary>
+            Creates a new instance of the ClientBase class.
+            </summary>
+            <param name="connection">The <see cref="T:Auth0.Core.Http.IApiConnection" /> which is used to communicate with the API.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.TentantSettingsClient.GetAsync(System.String,System.Boolean)">
+            <summary>
+            Gets the settings for the tenant.
+            </summary>
+            <param name="fields">A comma separated list of fields to include or exclude (depending on includeFields) from the
+            result, empty to retrieve all fields</param>
+            <param name="includeFields">true if the fields specified are to be included in the result, false otherwise (defaults to
+            true)</param>
+            <returns>A <see cref="T:Auth0.Core.TenantSettings" /> containing the settings for the tenant.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.TentantSettingsClient.UpdateAsync(Auth0.ManagementApi.Models.TenantSettingsUpdateRequest)">
+            <summary>
+            Updates the settings for the tenant.
+            </summary>
+            <param name="request">A <see cref="T:Auth0.ManagementApi.Models.TenantSettingsUpdateRequest" /> containing the settings for the tenant which are to
+            be updated.</param>
+            <returns>A <see cref="T:Auth0.Core.TenantSettings" /> containing the updated settings for the tenant.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.TicketsClient">
+            <summary>
+            Contains all the methods to call the /tickets endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.TicketsClient.#ctor(Auth0.Core.Http.IApiConnection)">
+            <summary>
+            Creates a new instance of the ClientBase class.
+            </summary>
+            <param name="connection">The <see cref="T:Auth0.Core.Http.IApiConnection" /> which is used to communicate with the API.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.TicketsClient.CreateEmailVerificationTicketAsync(Auth0.ManagementApi.Models.EmailVerificationTicketRequest)">
+            <summary>
+            Creates an email verification ticket.
+            </summary>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.EmailVerificationTicketRequest" /> containing the details of the ticket to create.</param>
+            <returns>The <see cref="T:Auth0.Core.Ticket" />.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.TicketsClient.CreatePasswordChangeTicketAsync(Auth0.ManagementApi.Models.PasswordChangeTicketRequest)">
+            <summary>
+            Creates a password change ticket.
+            </summary>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.PasswordChangeTicketRequest" /> containing the details of the ticket to create.</param>
+            <returns>The <see cref="T:Auth0.Core.Ticket" />.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.UserBlocksClient">
+            <summary>
+            Contains all the methods for the /user-blocks endpoints
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.UserBlocksClient.#ctor(Auth0.Core.Http.IApiConnection)">
+            <summary>
+            Creates a new instance of the user blocks client.
+            </summary>
+            <param name="connection">The <see cref="T:Auth0.Core.Http.IApiConnection" /> which is used to communicate with the API.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.UserBlocksClient.GetByIdentifierAsync(System.String)">
+            <summary>
+            Get a user's blocks by identifier.
+            </summary>
+            <param name="identifier">The identifier of the user. Can be a user's email address, username or phone number</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.UserBlocksClient.GetByUserIdAsync(System.String)">
+            <summary>
+            Get a user's blocks by user id.
+            </summary>
+            <param name="id">The id of the user</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.UserBlocksClient.UnblockByIdentifierAsync(System.String)">
+            <summary>
+            Unblock a user by their identifier.
+            </summary>
+            <param name="identifier">The identifier of the user. Can be a user's email address, username or phone number</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.UserBlocksClient.UnblockByUserIdAsync(System.String)">
+            <summary>
+            Unblock a user by their id.
+            </summary>
+            <param name="id">The id of the user</param>
+            <returns></returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Clients.UsersClient">
+            <summary>
+            Contains all the methods to call the /users endpoints.
+            </summary>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.UsersClient.#ctor(Auth0.Core.Http.ApiConnection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Auth0.ManagementApi.Clients.UsersClient"/> class.
+            </summary>
+            <param name="connection">The connection.</param>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.UsersClient.CreateAsync(Auth0.ManagementApi.Models.UserCreateRequest)">
+            <summary>
+            Creates a new user.
+            </summary>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.UserCreateRequest" /> containing the properties of the user to create.</param>
+            <returns>Task&lt;User&gt;.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.UsersClient.DeleteAllAsync">
+            <summary>
+            Deletes all users. Use with caution!
+            </summary>
+            <returns>Task.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.UsersClient.DeleteAsync(System.String)">
+            <summary>
+            Deletes a user.
+            </summary>
+            <param name="id">The id of the user to delete.</param>
+            <returns>Task.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.UsersClient.DeleteMultifactorProviderAsync(System.String,System.String)">
+            <summary>
+                Deletes a user's multifactor provider.
+            </summary>
+            <param name="id">The id of the user who multi factor provider to delete.</param>
+            <param name="provider">The type of the multifactor provider. Supported values 'duo' or 'google-authenticator'</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.UsersClient.GetAllAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.String,System.String,System.String,System.Nullable{System.Boolean},System.String,System.String)">
+            <summary>
+            Lists or search for users based on criteria.
+            </summary>
+            <param name="page">The page number. Zero based.</param>
+            <param name="perPage">The amount of entries per page.</param>
+            <param name="includeTotals">True if a query summary must be included in the result.</param>
+            <param name="sort">The field to use for sorting. 1 == ascending and -1 == descending</param>
+            <param name="connection">Connection filter.</param>
+            <param name="fields">A comma separated list of fields to include or exclude (depending on
+            <paramref name="includeFields" />) from the result, empty to retrieve all fields.</param>
+            <param name="includeFields">True if the fields specified are to be included in the result, false otherwise. Defaults to
+            true.</param>
+            <param name="q">Query in Lucene query string syntax. Only fields in app_metadata, user_metadata or the normalized user
+            profile are searchable.</param>
+            <param name="searchEngine">Use 'v2' if you want to try the new search engine, or 'v1' for the old search engine.</param>
+            <returns>A <see cref="T:Auth0.Core.Collections.IPagedList`1"/> with the paged list of users.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.UsersClient.GetAsync(System.String,System.String,System.Boolean)">
+            <summary>
+            Gets a user.
+            </summary>
+            <param name="id">The id of the user to retrieve.</param>
+            <param name="fields">A comma separated list of fields to include or exclude (depending on includeFields) from the
+            result, empty to retrieve all fields</param>
+            <param name="includeFields">true if the fields specified are to be included in the result, false otherwise (defaults to
+            true)</param>
+            <returns>The <see cref="T:Auth0.Core.User" />.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.UsersClient.GetLogsAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean})">
+            <summary>
+            Retrieve every log event for a specific user id
+            </summary>
+            <param name="userId">The user id of the logs to retrieve</param>
+            <param name="page">The zero-based page number</param>
+            <param name="perPage">The amount of entries per page. Default: 50. Max value: 100</param>
+            <param name="sort">The field to use for sorting. Use field:order where order is 1 for ascending and -1 for descending. For example date:-1</param>
+            <param name="includeTotals">True if a query summary must be included in the result, false otherwise. Default false.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.UsersClient.LinkAccountAsync(System.String,Auth0.ManagementApi.Models.UserAccountLinkRequest)">
+            <summary>
+            Links a secondary account to a primary account.
+            </summary>
+            <param name="id">The ID of the primary account.</param>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.UserAccountLinkRequest" /> containing details of the secondary account to link.</param>
+            <returns>Task&lt;IList&lt;AccountLinkResponse&gt;&gt;.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.UsersClient.LinkAccountAsync(System.String,System.String,System.String)">
+            <summary>
+            Links a secondary account to a primary account.
+            </summary>
+            <param name="id">The ID of the primary account.</param>
+            <param name="primaryJwtToken">The JWT of the primary account.</param>
+            <param name="secondaryJwtToken">The JWT for the secondary account you wish to link.</param>
+            <returns>Task&lt;IList&lt;AccountLinkResponse&gt;&gt;.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.UsersClient.UnlinkAccountAsync(System.String,System.String,System.String)">
+            <summary>
+            Unlinks user accounts
+            </summary>
+            <param name="primaryUserId">The ID of the primary account.</param>
+            <param name="provider">The type of the identity provider.</param>
+            <param name="secondaryUserId">The ID for the secondary account</param>
+            <returns>Task&lt;IList&lt;AccountLinkResponse&gt;&gt;.</returns>
+        </member>
+        <member name="M:Auth0.ManagementApi.Clients.UsersClient.UpdateAsync(System.String,Auth0.ManagementApi.Models.UserUpdateRequest)">
+            <summary>
+            Updates a user.
+            </summary>
+            <param name="id">The id of the user to update.</param>
+            <param name="request">The <see cref="T:Auth0.ManagementApi.Models.UserUpdateRequest" /> containing the information you wish to update.</param>
+            <returns>Task&lt;User&gt;.</returns>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.AccountLinkResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.AccountLinkResponse.Connection">
+            <summary>
+            The name of the connection for the identity.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.AccountLinkResponse.IsSocial">
+            <summary>
+            Indicates whether this is a social connection.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.AccountLinkResponse.ProfileData">
+            <summary>
+            The profile data
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.AccountLinkResponse.Provider">
+            <summary>
+            The type of identity provider.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.AccountLinkResponse.UserId">
+            <summary>
+            The unique identifier for the user for the identity.
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.AccountLinkResponseProfileData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.AccountLinkResponseProfileData.Email">
+            <summary>
+            The email address for the profile.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.AccountLinkResponseProfileData.EmailVerified">
+            <summary>
+            Indicates whether the <see cref="P:Auth0.ManagementApi.Models.AccountLinkResponseProfileData.Email"/> is verified.
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.BlacklistedTokenCreateRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.ClientCreateRequest">
+            <summary>
+            Requests structure for creating a new client.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.ClientCreateRequest.IsHerokuApp">
+            <summary>
+            True if the client is a heroku application, false otherwise
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.ClientGrantCreateRequest">
+            <summary>
+            Request structure for creating a new Client Grant
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.ClientGrantUpdateRequest">
+            <summary>
+            Request structure for updating a new Client Grant
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.ClientGrantUpdateRequest.Scope">
+            <summary>
+            Gets or sets the list of scopes
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.ClientUpdateRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.ConnectionCreateRequest">
+            <summary>
+            Specified the properies for creating a new request.
+            </summary>
+            <remarks>
+            At least the <see cref="P:Auth0.Core.ConnectionBase.Name"/> and <see cref="P:Auth0.ManagementApi.Models.ConnectionCreateRequest.Strategy"/> properties are required.
+            </remarks>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.ConnectionCreateRequest.Strategy">
+            <summary>
+            The identity provider identifier for the connection.
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.ConnectionUpdateRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.DeviceCredentialCreateRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.DeviceCredentialCreateRequest.ClientId">
+            <summary>
+            Gets or sets the ID of the client for which the credential will be created.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.DeviceCredentialCreateRequest.UserId">
+            <summary>
+            Gets or sets the ID of the user using the device for which the credential will be created.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.DeviceCredentialCreateRequest.Value">
+            <summary>
+            Gets or sets the value of the credentia
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.EmailProviderConfigureRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.EmailProviderUpdateRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.EmailVerificationTicketRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.EmailVerificationTicketRequest.ResultUrl">
+            <summary>
+            The user will be redirected to this endpoint once the ticket is used.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.EmailVerificationTicketRequest.UserId">
+            <summary>
+            The user ID for which the ticket is to be created.
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.PasswordChangeTicketRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.PasswordChangeTicketRequest.ResultUrl">
+            <summary>
+            The user will be redirected to this endpoint once the ticket is used.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.PasswordChangeTicketRequest.UserId">
+            <summary>
+            The user ID for which the ticket is to be created.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.PasswordChangeTicketRequest.NewPassword">
+            <summary>
+            The password to set for the user once the ticket is used.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.PasswordChangeTicketRequest.ConnectionId">
+            <summary>
+            The connection that provides the identity for which the password is to be changed. If sending this parameter, the <see cref="P:Auth0.ManagementApi.Models.PasswordChangeTicketRequest.Email"/> is also required and the <see cref="P:Auth0.ManagementApi.Models.PasswordChangeTicketRequest.UserId"/> is invalid.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.PasswordChangeTicketRequest.Email">
+            <summary>
+            The user's email.
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.ResourceServerCreateRequest">
+            <summary>
+            Request structure for creating a new resource server
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.ResourceServerCreateRequest.Identifier">
+            <summary>
+            The identifier of the resource server
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.ResourceServerUpdateRequest">
+            <summary>
+            Request structure for updating a resource server
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.RuleCreateRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.RuleCreateRequest.Stage">
+            <summary>
+            Gets or sets the execution stage of the rule.
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.RuleUpdateRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.TenantSettingsUpdateRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.UserAccountJwtLinkRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserAccountJwtLinkRequest.LinkWith">
+            <summary>
+            Gets or sets the JWT of the secondary account being linked.
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.UserAccountLinkRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserAccountLinkRequest.Provider">
+            <summary>
+            Gets or sets the type of identity provider of the secondary account being linked.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserAccountLinkRequest.ConnectionId">
+            <summary>
+            Gets or sets the identifier of the connection of the secondary account being linked.
+            </summary>
+            <remarks>
+             This is optional and may be useful in the case of having more than a database connection for the 'auth0' provider.
+            </remarks>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserAccountLinkRequest.UserId">
+            <summary>
+            Gets or sets the user's identitifer of the secondary account being linked.
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.UserCreateRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserCreateRequest.Connection">
+            <summary>
+            Gets or sets the connection the user belongs to.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserCreateRequest.Password">
+            <summary>
+            Gets or sets the user's password. This is mandatory on non-SMS connections.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserCreateRequest.NickName">
+            <summary>
+            The Nickname of the user.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserCreateRequest.FirstName">
+            <summary>
+            The first name of the user (if available).
+            </summary>
+            <remarks>
+            This is the given_name attribute supplied by the underlying API.
+            </remarks>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserCreateRequest.FullName">
+            <summary>
+            The full name of the user (e.g.: John Foo). ALWAYS GENERATED.
+            </summary>
+            <remarks>
+            This is the name attribute supplied by the underlying API.
+            </remarks>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserCreateRequest.LastName">
+            <summary>
+            The last name of the user (if available).
+            </summary>
+            <remarks>
+            This is the family_name attribute supplied by the underlying API.
+            </remarks>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserCreateRequest.Picture">
+            <summary>
+            URL pointing to the user picture (if not available, will use gravatar.com with the email). ALWAYS GENERATED
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.UserUpdateRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserUpdateRequest.Connection">
+            <summary>
+            Gets or sets the connection the user belongs to.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserUpdateRequest.Password">
+            <summary>
+            Gets or sets the user's password. This is mandatory on non-SMS connections.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserUpdateRequest.PhoneVerified">
+            <summary>
+            Gets or sets whether the user's phone is verified.
+            </summary>
+            <remarks>
+            True if the phone is verified, otherwise false.
+            </remarks>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserUpdateRequest.VerifyEmail">
+            <summary>
+            Gets or sets whether the user's email change must be verified. True if it must be verified, otherwise false.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserUpdateRequest.VerifyPassword">
+            <summary>
+            Gets or sets whether the user's password change needs to be verified via email. True if it must be verified, otherwise false.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserUpdateRequest.VerifyPhoneNumber">
+            <summary>
+            Gets or sets whether the user's phone number change needs to be verified via email. True if it must be verified, otherwise false.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserUpdateRequest.ClientId">
+            <summary>
+            Gets or sets the Auth0 clientID. Only useful when updating the email.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserUpdateRequest.Blocked">
+            <summary>
+            Gets or sets whether the user is blocked. True if the user is blocked, otherwise false.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserUpdateRequest.NickName">
+            <summary>
+            The Nickname of the user.
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserUpdateRequest.FirstName">
+            <summary>
+            The first name of the user (if available).
+            </summary>
+            <remarks>
+            This is the given_name attribute supplied by the underlying API.
+            </remarks>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserUpdateRequest.FullName">
+            <summary>
+            The full name of the user (e.g.: John Foo). ALWAYS GENERATED.
+            </summary>
+            <remarks>
+            This is the name attribute supplied by the underlying API.
+            </remarks>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserUpdateRequest.LastName">
+            <summary>
+            The last name of the user (if available).
+            </summary>
+            <remarks>
+            This is the family_name attribute supplied by the underlying API.
+            </remarks>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.UserUpdateRequest.Picture">
+            <summary>
+            URL pointing to the user picture (if not available, will use gravatar.com with the email). ALWAYS GENERATED
+            </summary>
+        </member>
+        <member name="T:Auth0.ManagementApi.Models.VerifyEmailJobRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Auth0.ManagementApi.Models.VerifyEmailJobRequest.UserId">
+            <summary>
+            The identifier of the user to whom the email will be sent.
+            </summary>
+        </member>
+        <member name="T:Auth0.Core.Http.ApiConnection">
+            <summary>
+            The communication layer between the various API clients and the actual API backend.
+            </summary>
+        </member>
+        <member name="P:Auth0.Core.Http.ApiConnection.ApiInfo">
+            <summary>
+            Contains information about the last API call made by the connection.
+            </summary>
+        </member>
+        <member name="M:Auth0.Core.Http.ApiConnection.#ctor(System.String,System.String,Auth0.Core.Http.DiagnosticsHeader,System.Net.Http.HttpMessageHandler)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Auth0.Core.Http.ApiConnection"/> class.
+            </summary>
+            <param name="token">The API token.</param>
+            <param name="baseUrl">The base URL of the requests.</param>
+            <param name="diagnostics">The diagnostics. header</param>
+            <param name="handler"></param>
+        </member>
+        <member name="M:Auth0.Core.Http.ApiConnection.DeleteAsync``1(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Performs an HTTP DELETE.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="resource">The resource.</param>
+            <param name="urlSegments">The URL segments.</param>
+            <param name="queryStrings"></param>
+            <returns>Task&lt;T&gt;.</returns>
+        </member>
+        <member name="M:Auth0.Core.Http.ApiConnection.GetAsync``1(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Object},Newtonsoft.Json.JsonConverter[])">
+            <summary>
+            Performs an HTTP GET.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="resource">The resource.</param>
+            <param name="urlSegments">The URL segments.</param>
+            <param name="queryStrings">The query strings.</param>
+            <param name="headers">The headers.</param>
+            <param name="converters">The list of <see cref="T:Newtonsoft.Json.JsonConverter"/> to use during deserialization.</param>
+            <returns>Task&lt;T&gt;.</returns>
+        </member>
+        <member name="M:Auth0.Core.Http.ApiConnection.PostAsync``1(System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IList{Auth0.Core.Http.FileUploadParameter},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Performs an HTTP POST.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="resource">The resource.</param>
+            <param name="body">The body.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="fileParameters">The file parameters.</param>
+            <param name="urlSegments">The URL segments.</param>
+            <param name="headers">The headers.</param>
+            <param name="queryStrings">The query strings.</param>
+            <returns>Task&lt;T&gt;.</returns>
+        </member>
+        <member name="M:Auth0.Core.Http.ApiConnection.PatchAsync``1(System.String,System.Object,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs an HTTP PATCH.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="resource">The resource.</param>
+            <param name="body">The body.</param>
+            <param name="urlSegments">The URL segments.</param>
+            <returns>Task&lt;T&gt;.</returns>
+        </member>
+        <member name="M:Auth0.Core.Http.ApiConnection.RunAsync``1(System.String,System.Net.Http.HttpMethod,System.Object,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IList{Auth0.Core.Http.FileUploadParameter},Newtonsoft.Json.JsonConverter[])">
+            <summary>
+            Executes the request. All requests will pass through this method as it will apply the headers, do the JSON formatting, check for errors on return, etc.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="resource">The resource.</param>
+            <param name="httpMethod">The HTTP method.</param>
+            <param name="body">The body.</param>
+            <param name="urlSegments">The URL segments.</param>
+            <param name="queryStrings">The query strings.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="headers">The headers.</param>
+            <param name="fileParameters">The file parameters.</param>
+            <param name="converters">The list of <see cref="T:Newtonsoft.Json.JsonConverter"/> to use during deserialization.</param>
+            <returns>Task&lt;T&gt;.</returns>
+        </member>
+        <member name="M:Auth0.Core.Http.ApiConnection.BuildMessageContent(System.Object,System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IList{Auth0.Core.Http.FileUploadParameter})">
+            <summary>
+            Builds the content of the message. This will build the appropriate <see cref="T:System.Net.Http.HttpContent"/> for the request based on the type of the parameters passed in.
+            </summary>
+            <param name="body">The body.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="fileParameters">The file parameters.</param>
+            <returns>HttpContent.</returns>
+        </member>
+        <member name="M:Auth0.Core.Http.ApiConnection.BuildRequestUri(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Builds up the URL for the request by substituting values for URL segments and adding query string parameters.
+            </summary>
+            <param name="resource">The resource.</param>
+            <param name="urlSegments">The URL segments.</param>
+            <param name="queryStrings">The query strings.</param>
+            <returns>Uri.</returns>
+        </member>
+        <member name="M:Auth0.Core.Http.ApiConnection.HandleErrors(System.Net.Http.HttpResponseMessage)">
+            <summary>
+            Handles errors returned from the API. It will check the response code, deserialize any relevant JSON error payload and throw an appropriate exception.
+            </summary>
+            <param name="response">The <see cref="T:System.Net.Http.HttpResponseMessage"/> returned from the API.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/>.</returns>
+            <exception cref="T:Auth0.Core.Exceptions.ApiException"></exception>
+        </member>
+        <member name="T:Auth0.Core.Http.ApiInfo">
+            <summary>
+            Represents information about an API call.
+            </summary>
+        </member>
+        <member name="P:Auth0.Core.Http.ApiInfo.RateLimit">
+            <summary>
+            Information about the current rate limit.
+            </summary>
+        </member>
+        <member name="M:Auth0.Core.Http.ApiInfo.#ctor(Auth0.Core.Http.RateLimit)">
+            <summary>
+            Creates a new instance of the ApiInfo class.
+            </summary>
+            <param name="rateLimit">The current rate limit information.</param>
+        </member>
+        <member name="T:Auth0.Core.Http.DiagnosticsHeader">
+            <summary>
+                Represents important information pertaining to the SDK that is sent to Auth0 for diagnostic purposes.
+            </summary>
+        </member>
+        <member name="P:Auth0.Core.Http.DiagnosticsHeader.Default">
+            <summary>
+                Gets the <see cref="T:Auth0.Core.Http.DiagnosticsHeader" /> instance that contains the default set of SDK information.
+            </summary>
+        </member>
+        <member name="P:Auth0.Core.Http.DiagnosticsHeader.Dependencies">
+            <summary>
+                Gets the set of components that represent the SDK's 3rd party dependencies.
+            </summary>
+        </member>
+        <member name="P:Auth0.Core.Http.DiagnosticsHeader.Environments">
+            <summary>
+                Gets a set of components that represent the SDK's execution environment.
+            </summary>
+        </member>
+        <member name="P:Auth0.Core.Http.DiagnosticsHeader.Suppress">
+            <summary>
+                Gets the <see cref="T:Auth0.Core.Http.DiagnosticsHeader" /> instance that tells the SDK to not send the diagnostic header.
+            </summary>
+        </member>
+        <member name="M:Auth0.Core.Http.DiagnosticsHeader.AddDependency(Auth0.Core.Http.DiagnosticsComponent)">
+            <summary>
+                Adds a new dependency instance to the SDK's <see cref="P:Auth0.Core.Http.DiagnosticsHeader.Dependencies" />.
+            </summary>
+        </member>
+        <member name="M:Auth0.Core.Http.DiagnosticsHeader.AddDependency(System.String,System.Object)">
+            <summary>
+                Adds a new dependency to the SDK's <see cref="P:Auth0.Core.Http.DiagnosticsHeader.Dependencies" />.
+            </summary>
+        </member>
+        <member name="M:Auth0.Core.Http.DiagnosticsHeader.AddEnvironment(Auth0.Core.Http.DiagnosticsComponent)">
+            <summary>
+                Adds a new environment entry instance to the SDK's Environment />.
+            </summary>
+        </member>
+        <member name="M:Auth0.Core.Http.DiagnosticsHeader.AddEnvironment(System.String,System.Object)">
+            <summary>
+                Adds a new environment to the SDK's Environment />.
+            </summary>
+        </member>
+        <member name="M:Auth0.Core.Http.DiagnosticsHeader.Reset">
+            <summary>
+                Resets the <see cref="P:Auth0.Core.Http.DiagnosticsHeader.Default" /> and <see cref="P:Auth0.Core.Http.DiagnosticsHeader.Suppress" /> instances.
+            </summary>
+        </member>
+        <member name="M:Auth0.Core.Http.DiagnosticsHeader.ToString">
+            <summary>
+                Returns a string representation of the <see cref="T:Auth0.Core.Http.DiagnosticsHeader" /> that is safe for HTTP transport.
+            </summary>
+        </member>
+        <member name="T:Auth0.Core.Http.IApiConnection">
+            <summary>
+            The communication layer between the various API clients and the actual API back-end. All API calls happen through this interface.
+            </summary>
+        </member>
+        <member name="M:Auth0.Core.Http.IApiConnection.DeleteAsync``1(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Performs an HTTP DELETE.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="resource">The resource.</param>
+            <param name="urlSegments">The URL segments.</param>
+            <param name="queryStrings"></param>
+            <returns>Task&lt;T&gt;.</returns>
+        </member>
+        <member name="M:Auth0.Core.Http.IApiConnection.GetAsync``1(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Object},Newtonsoft.Json.JsonConverter[])">
+            <summary>
+            Performs an HTTP GET.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="resource">The resource.</param>
+            <param name="urlSegments">The URL segments.</param>
+            <param name="queryStrings">The query strings.</param>
+            <param name="headers">The headers.</param>
+            <param name="converters">The list of <see cref="T:Newtonsoft.Json.JsonConverter"/> to use during deserialization.</param>
+            <returns>Task&lt;T&gt;.</returns>
+        </member>
+        <member name="M:Auth0.Core.Http.IApiConnection.PostAsync``1(System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IList{Auth0.Core.Http.FileUploadParameter},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Performs an HTTP POST.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="resource">The resource.</param>
+            <param name="body">The body.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="fileParameters">The file parameters.</param>
+            <param name="urlSegments">The URL segments.</param>
+            <param name="headers">The headers.</param>
+            <param name="queryStrings">The query strings.</param>
+            <returns>Task&lt;T&gt;.</returns>
+        </member>
+        <member name="M:Auth0.Core.Http.IApiConnection.PatchAsync``1(System.String,System.Object,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Performs an HTTP PATCH.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="resource">The resource.</param>
+            <param name="body">The body.</param>
+            <param name="urlSegments">The URL segments.</param>
+            <returns>Task&lt;T&gt;.</returns>
+        </member>
+        <member name="T:Auth0.Core.Http.RateLimit">
+            <summary>
+            Represents information about the rate limit for API calls.
+            </summary>
+        </member>
+        <member name="P:Auth0.Core.Http.RateLimit.Limit">
+            <summary>
+            The maximum number of requests the consumer is allowed to make.
+            </summary>
+        </member>
+        <member name="P:Auth0.Core.Http.RateLimit.Remaining">
+            <summary>
+            The number of requests remaining in the current rate limit window.
+            </summary>
+        </member>
+        <member name="P:Auth0.Core.Http.RateLimit.Reset">
+            <summary>
+            The date and time offset at which the current rate limit window is reset.
+            </summary>
+        </member>
+    </members>
+</doc>

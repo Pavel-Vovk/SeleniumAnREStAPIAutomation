@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B39E654C-29A0-4A50-AA63-CC3F9CA3821E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RevolutionInsure.EnrollmentPlatform.TestSuites</RootNamespace>
+    <AssemblyName>RevolutionInsure.EnrollmentPlatform.TestSuites</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Auth0.AuthenticationApi, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Auth0.AuthenticationApi.3.7.0\lib\net45\Auth0.AuthenticationApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Auth0.Core, Version=3.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Auth0.Core.3.7.0\lib\net45\Auth0.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AutoMapper, Version=6.0.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.0.2\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CodeContracts, Version=1.0.5680.18392, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CodeContracts.1.0.5680.18392\lib\net40\CodeContracts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.6.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.6.1\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.ValueTuple, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.3.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise />
+  </Choose>
+  <ItemGroup>
+    <Compile Include="RESTfullTestSuites\AccountController\AccountControllerPositiveTest.cs" />
+    <Compile Include="RESTfullTestSuites\AgencyController\AgencyControllerPositiveTest.cs" />
+    <Compile Include="RESTfullTestSuites\AgentController\AgentControllerPositiveTest.cs" />
+    <Compile Include="RESTfullTestSuites\ApplicationController\ApplicationControllerPositiveTest.cs" />
+    <Compile Include="RESTfullTestSuites\CarrierController\CarrierControllerPositiveTest.cs" />
+    <Compile Include="RESTfullTestSuites\ContactController\ContactControllerPositiveTest.cs" />
+    <Compile Include="RESTfullTestSuites\CountryController\CountryControllerPositiveTest.cs" />
+    <Compile Include="RESTfullTestSuites\DashboardChartController\DashboardChartControllerPositiveTest.cs" />
+    <Compile Include="RESTfullTestSuites\DashboardController\DashboardControllerPositiveTest.cs" />
+    <Compile Include="RESTfullTestSuites\CareigntonController\CareigntonControllerPositiveTest.cs" />
+    <Compile Include="RESTfullTestSuites\KnockoutQuestionController\KnockoutQuestionControllerPositiveTest.cs" />
+    <Compile Include="RESTfullTestSuites\LogController\LogControllerPositiveTest.cs" />
+    <Compile Include="RESTfullTestSuites\PdfConversionController\PdfConversionControllerPositiveTest.cs" />
+    <Compile Include="RESTfullTestSuites\PolicyNumberController\PolicyNumberControllerPositiveTest.cs" />
+    <Compile Include="RESTfullTestSuites\ProductController\ProductControllerPositiveTest.cs" />
+    <Compile Include="RESTfullTestSuites\QuoteController\QuoteControllerPositiveTest.cs" />
+    <Compile Include="RESTfullTestSuites\StateController\StateControllerPositiveTest.cs" />
+    <Compile Include="RESTSuiteBase.cs" />
+    <Compile Include="UISeleniumTestSuites\Login\LoginUIPositiveTest.cs" />
+    <Compile Include="UISeleniumTestSuites\MultiQuote\FilMultiQuotelSteps.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeleniumUISuiteBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="JSONs\UI\Application.json" />
+    <None Include="JSONs\UI\Footer_Text.json" />
+    <None Include="JSONs\UI\Header_Text.json" />
+    <None Include="JSONs\UI\LiginModel_Lisa.json" />
+    <None Include="JSONs\UI\MIC_AEP_ProductOption.json" />
+    <None Include="JSONs\UI\MultiquoteQuoteShell_Texts.json" />
+    <None Include="JSONs\UI\MultiquoteReviewQuote_Error_Mes.json" />
+    <None Include="JSONs\UI\MultiquoteReviewQuote_Family_Texts.json" />
+    <None Include="JSONs\UI\MultiquoteReviewQuote_Ind_Texts.json" />
+    <None Include="JSONs\UI\MultiquoteReviewQuote_Texts.json" />
+    <None Include="JSONs\UI\Payment_info.json" />
+    <None Include="JSONs\UI\PersonalInfo_Family.json" />
+    <None Include="JSONs\UI\Personal_Info_Family.json" />
+    <None Include="JSONs\UI\QuoteRequest.json" />
+    <None Include="JSONs\UI\QuoteRequest_Coverage0.json" />
+    <None Include="JSONs\UI\QuoteRequest_Family.json" />
+    <None Include="JSONs\UI\Quote_Data_Family.json" />
+    <None Include="JSONs\UI\UI_Errors.json" />
+    <None Include="packages.config" />
+    <None Include="RESTfullTestSuites\RESTTestOrder.playlist">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UISeleniumTestSuites\UITestOrder.playlist">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="JSONs\API\" />
+    <Folder Include="JSONs\Schemas\" />
+    <Folder Include="UISeleniumTestSuites\AgentRegistration\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RevolutionInsure.EmrollmentPlatform.Common\RevolutionInsure.EmrollmentPlatform.Common.csproj">
+      <Project>{FB530FD6-37ED-4A72-AE5E-1F1A8FBB9D97}</Project>
+      <Name>RevolutionInsure.EmrollmentPlatform.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RevolutionInsure.EnrollmentPlatform.AutomationREST\RevolutionInsure.EnrollmentPlatform.AutomationREST.csproj">
+      <Project>{78b84241-0e73-4f82-b153-e78d53158d90}</Project>
+      <Name>RevolutionInsure.EnrollmentPlatform.AutomationREST</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RevolutionInsure.EnrollmentPlatform.AutomationSelenium\RevolutionInsure.EnrollmentPlatform.AutomationSelenium.csproj">
+      <Project>{708e24c8-3b75-4dc1-aa8f-eebed2b40aac}</Project>
+      <Name>RevolutionInsure.EnrollmentPlatform.AutomationSelenium</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RevolutionInsure.EnrollmentPlatform.Api\RevolutionInsure.EnrollmentPlatform.Api.csproj">
+      <Project>{347ad371-df27-4438-a51d-e73dbde05e87}</Project>
+      <Name>RevolutionInsure.EnrollmentPlatform.Api</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chromedriver.exe" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
